@@ -25,7 +25,7 @@ class CreateAlumnos extends Migration {
   	$table->date('fechanac');
   	$table->string('email')->unique();
   	$table->string('situacion');
-  	$table->string('remember_token');	
+  	
 		});
 		
 	}
