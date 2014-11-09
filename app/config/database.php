@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'coordvinc',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 'us-cdbr-azure-east2-d.cloudapp.net',
+			'database'  => 'coorvincdb',
+			'username'  => 'bfe0cdef6beb09',
+			'password'  => '0643ae0b',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
