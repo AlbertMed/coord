@@ -38,7 +38,7 @@ Route::get('/logout', 'UserLogin@logout');
 
 //Route::get('/saludo','AlumnosController@saludo');
 
-Route::get('/insert', function()
+Route::get('/insert', function()  //falta cambiar valores ... primero hacer registro
 {
 	$alumno = new Alumno;
         
@@ -57,15 +57,12 @@ Route::get('/insert', function()
 
 });
 
-Route::get('/registro',function(){
+Route::get('/registro',function(){//falta revisar...
     return View::make('registro');
 });
 
 
 Route::get('/practicas/observacion', function(){
- return View::make('observacion.pobservacion');
- 
-}
-    );
+ return View::make('observacion.pobservacion'); });//necesita estar logeado checar
 
 

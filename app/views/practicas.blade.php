@@ -27,7 +27,7 @@
                  <div class="logo">
                      <?php echo '<h2>Alumno</h2>'; ?>
                      <?php echo '<a>Estado</a>'; ?><br><br>
-                     <a href="login.php" page="_blanck"><u>Cerrar sesión</u></a>
+                     <a href="/logout"><u>Cerrar sesión</u></a>
                  </div> <!-- /.logo -->
 
                  <div class="navigation">
