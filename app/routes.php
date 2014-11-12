@@ -61,6 +61,11 @@ Route::get('/registro',function(){
     return View::make('registro');
 });
 
-//Route::get('/login2', 'AuthController@getLogin');
+
+Route::get('/practicas/observacion', function(){
+ return View::make('observacion.pobservacion');
+ 
+}
+    );
 
 

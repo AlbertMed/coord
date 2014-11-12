@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Prácticas de Observación</title>
+    <title>Prácticas Profesionales</title>
         @include('includes.stylesEncabezado')
     </head>
 
@@ -17,7 +17,7 @@
                      <ul>
                          <li class="home"><a href="#templatemo">Inicio</a></li>
                          <li class="about"><a href="#about">Prácticas Profesionales</a></li>
-                         <li class="contact"><a href="#about">Tipos de Prácticas</a></li>
+                         <li class="contact"><a href="#tipos">Tipos de Prácticas</a></li>
                          <li class="services"><a href="#services">Informaci&Oacute;n del proceso</a></li>
                      </ul> <!-- /.main_menu -->
                  </div> <!-- /.responsive_menu -->
@@ -102,8 +102,9 @@
                                      <h2>Prácticas Profesionales</h2>
                                  </div>
                              </div>
-                         </div>
-                         <div class="row">
+                         </div>                         
+                         
+                     <div class="row">
      <!--                     
 
                          </div> <!-- /.row -->
@@ -149,28 +150,33 @@
                               los estudiantes y los padres de familia o tutores.<br>
                               c)  Escenario Real.<br><br>
                              La operatividad de las prácticas requiere que los involucrados ejecuten las siguientes acciones: 
-</p>
+                            </p>
                              </div>
                              <div class="col-md-4">
                                  <div class="story-image">
                                     
                                  </div>
                              </div>
+                             </div>
                          </div> <!-- /.row -->
                      </div> <!-- /#about -->
 
 
-<div id="tipos" class="section-content">
+                 <div id="tipos" class="section-content">
+                     
                          <div class="row">
-                             <div class="col-md-12">
+                               <div class="col-md-12">
                                  <div class="section-title">
                                      <h2>Tipos de Prácticas</h2>
                                  </div> <!-- /.section-title -->
                              </div> <!-- /.col-md-12 -->
                          </div> <!-- /.row -->
-                         <div class="row our-skills">
+                      
 
-                             <div class="col-md-8">
+                         
+                         <div class="row our-tipos">
+
+                            <div class="col-md-8">
                               <h3>Prácticas de observación:</h3>
                               <p align="justify">El estudiante con la orientación y 
                               asesoría del profesor que imparte la materia de Dinámicas 
@@ -181,29 +187,34 @@
                               social; con la finalidad de recopilar información de lo existente
                               como oportunidad de desarrollo profesional futuro.</p><br><br>
 
-                               <p align="right"><a  href ="http://www.google.com" class="btn btn-primary btn-lg">Más informacion  >></a></p>                            
-                             </div>
-                             <div class="col-md-4">
-                                 <div class="story-image">
+                               <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
+                            
+                            </div>   <!-- /col-md-8 -->
+                              
+                               <div class="col-md-4">
+                                  <div class="story-image">
                                      
-                                 </div>
-                             </div>
+                                  </div>
+                               </div>
                          </div>
-                         <div class="col-md-4">
-                                 <div class="service-item">
-                                     <div class="service-icon">
+                             
+                            <div class="col-md-4">
+                                 <div class="contac-item">
+                                     <div class="contac-icon">
                                          <i class="fa fa-laptop fa-2x"></i>
                                      </div>
-                                     <div class="service-content">
-                                         <h3><a href="presenta.html" target="_blank"><font color="#fff">Presentación</font></a></h3>
-
-                                     </div>
+                                      <div class="contac-content">
+                                         <H3><a href="presenta.html" target="_blank"><font color="#fff">Presentación</font></a></H3>
+                                      </div>
                                  </div> <!-- /.service-item -->
                              </div> <!-- /.col-md-4 -->
-                     </div> <!-- /#services -->
+                             
+                             
+              </div> <!-- /#tipos -->
 
 
-                     <div id="services" class="section-content">
+                   <div id="services" class="section-content">
+                       
                          <div class="row">
                              <div class="col-md-12">
                                  <div class="section-title">
