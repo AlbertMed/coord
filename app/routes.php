@@ -21,13 +21,15 @@ Route::get('/', function()
             {
                  if (Session::has('in'))
                  {
-                    return View::make('practicas'); 
+                    return Redirect::to('practicas'); 
                  }else{
                     return View::make('login'); 
                  }                                    
         }
         );
-
+Route::get('practicas',array('before' => 'guest', function(){
+         return View::make('login'); 
+}) );
 Route::post('login', 'UserLogin@user');
 
 Route::get('/logout', 'UserLogin@logout');
