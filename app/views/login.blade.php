@@ -9,7 +9,7 @@
 	     </head>    
          <body>
          <h1 align="center">Sistema de la Coordinación</h1>
-        <h2 align="center">CBT. LIC. JULIAN DIAZ ARIAS</h2>
+        <h2 align="center">CBT. LIC. JULIÁN DÍAZ ARIAS</h2>
         <div id="container">
              <div id="logo">
                 
