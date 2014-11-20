@@ -19,9 +19,9 @@
                 <form id="loginform" action="login" method="post" >
     				
                     @if (Session::has('login_errors'))
-                    <p style='color:#FB1D1D' >El nombre de usuario o la contraseña no son correctos.</p>
+                    <p style='color:#FB1D1D' >La matrícula o la curp no son correctas.</p>
                     @else
-                    <p>Introduzca usuario y contraseña para continuar.</p>
+                    <p>Introduzca matrícula y curp para continuar.</p>
                     @endif
                                   
                     <div class="input-group input-sm">
