@@ -34,7 +34,7 @@
                      <ul class="main-menu">
                          <li class="home"><a href="#templatemo">Inicio</a></li>
                          <li class="about"><a href="#about">Prácticas de Observacion</a></li>
-                         <li class="contact"><a href="#tipos">Foratos</a></li>
+                         <li class="contact"><a href="#tipos">Formatos</a></li>
                          <li class="services"><a href="#services">Informaci&Oacute;n del proceso</a></li>
 
                      </ul>
