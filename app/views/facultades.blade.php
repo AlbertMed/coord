@@ -9,7 +9,7 @@
         <title>CBT Chapultepec</title>
         <!-- Caption Style -->
          
-          <link rel="stylesheet" type="text/css" href="css/main/menu.css">
+            <link rel="stylesheet" type="text/css" href="css/main/menu.css">
           <link rel="stylesheet" type="text/css" href="css/main/trans.css">
           <!-- Begin JavaScript -->
     </head>
@@ -208,22 +208,16 @@
   
 
 </p>
-<div class="obje" style="text-align:justify">
-   <div class="objes">
-   	<div style="text-align:center"><br><h3>Objetivos generales de la coordinación </h3><b> </div>
+<div class="primero" style="text-align:justify">
+   <div class="segundo">
+   <div style="text-align:center"><br><h3>Facultades</h3><b></div>
+   	
    <span style="font-size: 17px;">
-  
-    1.  Proporcionar a los alumnos los elementos, información y seguimiento así como la atención relativa a los procesos de Servicio Social, Prácticas Profesionales, Certificación de Competencias y Titulación.<br><br>
-
-    2.  Establecer estrategias, medios y formas de comunicación e información para con la comunidad escolar, tendientes a difundir los procedimientos, procesos, la tecnología, la cultura y la vida institucional de nuestra escuela; con la participación de los sectores que integran nuestra comunidad escolar.<br><br> 
-
-    3.  Establecer vinculación entre nuestro plantel educativo e instituciones de educación superior y los sectores productivo y/o de servicios, con el fin de elevar la calidad formativa de nuestros educandos mediante la realización de las estadías y enriquecer ello en el ámbito de las prácticas profesionales.<br><br> 
-
-    4.  Realizar el seguimiento de nuestros egresados para conocer su situación de ubicación en el campo laboral y de acceso al nivel educativo superior para fortalecer y retroalimentar las acciones institucionales formativas.<br><br>
-
-    5.  Realizar actividades tendientes a fortalecer los servicios de apoyo a la formación y de la situación de los alumnos mediante becas, bolsa de trabajo, seguro facultativo y demostraciones tecnológicas.<br><br>
-
-    6.  Coadyuvar en la planeación y evaluación institucional.</span>
+   •  Representar a las autoridades escolares ante instituciones de educación superior y sectores productivos de bienes y servicios, a efecto de promover programas de cooperación, apoyo e intercambio.
+   <br><br>
+   • Representar a la institución ante diversas instancias para las gestiones de vinculación, correspondiente a los procesos de servicio social, prácticas profesionales y titulación.
+   <br><br>
+   • Coordinar con la Dirección Escolar, la formalización de los programas de cooperación, apoyo e intercambio; resultado de la gestión realizada.</span>
    </div>  
 </div>
 
