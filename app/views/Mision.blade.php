@@ -91,7 +91,7 @@
 								<li class="dropdown"><a href="#">Ex alumnos <i class="icon-angle-right"></i></a>
 								<ul style="display: none;" class="dropdown-menu sub-menu-level1 bold">
 									<li><a href="bolsa-de-trabajo">Bolsa de trabajo</a></li>
-									<li><a href="segimiento-egresados">Seguimiento de egresados</a></li>
+									<li><a href="seguimiento-egresados">Seguimiento de egresados</a></li>
 									<!--Esta area es de prueba de menu desplegable en segundo/tercero nivel 
 									 <li class="dropdown"><a href="#">prueba <i class="icon-angle-right"></i></a>
 								<ul style="display: none;" class="dropdown-menu sub-menu-level2 bold">

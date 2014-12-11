@@ -131,7 +131,7 @@ Route::get('matemáticas-y-razonamiento-complejo',function(){
 Route::get('orientacion',function(){
     return View::make('plantaDO');
 });
-
+            
 Route::get('seguimiento-egresados',function(){
     return View::make('segimientoEgresados');
 });
