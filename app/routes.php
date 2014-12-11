@@ -66,3 +66,80 @@ Route::get('/registro',function(){//falta revisar...
 
 Route::get('observacion', function(){
  return View::make('observacion.pobservacion'); });//necesita estar logeado checar
+ 
+ Route::get('index',function(){
+     return View::make('index'); });
+     
+Route::get('mision',function(){
+     return View::make('Mision');});
+     
+Route::get('bolsa-de-trabajo',function(){
+     return View::make('bolsaTrabajo');});
+ 
+Route::get('contacto',function(){
+  return View::make('contacto');  
+});
+
+Route::get('estrategias',function(){
+    return View::make('Estrategias');
+});
+     
+Route::get('facultades',function(){
+    return View::make('facultades');
+});
+
+Route::get('funciones',function(){
+    return View::make('Funciones');
+});
+
+Route::get('objetivo',function(){
+    return View::make('Objetivos');
+});
+
+Route::get('componentes-cognitivos',function(){
+    return View::make('plantaDC');
+});
+
+Route::get('comunicación-y-lenguaje',function(){
+    return View::make('plantaDCL');
+});
+
+Route::get('ciencias-naturales',function(){
+    return View::make('plantaDCN');
+});
+
+Route::get('coordinación-de-vinculacion',function(){
+    return View::make('plantaDCO');
+});
+
+Route::get('ciencias-sociales-y-humanidades',function(){
+    return View::make('plantaDCS');
+});
+
+Route::get('direccion',function(){
+    return View::make('plantaDD');
+});
+
+Route::get('informática-y-computacion',function(){
+    return View::make('plantaDIC');
+});
+
+Route::get('matemáticas-y-razonamiento-complejo',function(){
+    return View::make('plantaDM');
+});
+
+Route::get('orientacion',function(){
+    return View::make('plantaDO');
+});
+
+Route::get('seguimiento-egresados',function(){
+    return View::make('segimientoEgresados');
+});
+
+Route::get('seguro-facultativo',function(){
+    return View::make('seguro-facultativo');
+});
+
+Route::get('vision',function(){
+    return View::make('Vision');
+});

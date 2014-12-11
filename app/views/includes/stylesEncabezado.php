@@ -5,5 +5,7 @@
         <link rel="stylesheet" href="lib/FontAwesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/templatemo_misc.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
-        <meta name="viewport" content="initial-scale=1">
+                
+                
+        
  

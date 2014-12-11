@@ -6,7 +6,7 @@ www.freshdesignweb.com
 /* ==== Google font ==== */
 @import url('http://fonts.googleapis.com/css?family=Raleway:400,900,700|Open+Sans:300,400,600,700');
 /* === fontawesome === */
-@import url('font-awesome.css');
+@import url('css/main/font-awesome.css');
 /* === custom icon === */
 body {
   margin: 0;
@@ -22,7 +22,7 @@ body {
 
 /* --- header -- */
 header{
-    background: url(../image/header-pattern-150.png) repeat;
+    background: url(img/main/header-pattern-150.png) repeat;
     margin:0;
     padding:0 0 20px;
     position:relative;

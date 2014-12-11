@@ -110,7 +110,7 @@
                          </div> <!-- /.row -->
                          <div class="row our-story">
                              <div class="col-md-8">                                 
-                              
+                              hola
                              </div>
                              <div class="col-md-4">
                                  <div class="story-image">
@@ -142,7 +142,8 @@
                               
                                <div class="col-md-4">
                                   <div class="story-image">
-                                      <h3>Ejemplo de llenado</h3><br>
+                                      <h4>Carta de Aceptación</h4><br>
+                                          
                                      <img src="img/cartaaceptacion.jpg" height=500 weight=50>
                                   </div>
                                </div>
@@ -163,7 +164,105 @@
                              
               </div> <!-- /#tipos -->
 
-
+<div id="portfolio" class="section-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2>Descarga de formatos</h2>
+                            </div> <!-- /.section-title -->
+                        </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.row -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="img/cartaaceptacion.jpg" alt="Fantasy">
+                                    <div class="overlay-p">
+                                        <a href="img/cartaaceptacion.jpg" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="Formulario_principal.php">SOLICITUD <br> REGISTRO/AUTORIZACIÓN</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio/f2.png" alt="Botany">
+                                    <div class="overlay-p">
+                                        <a href="images/portfolio/f2.png" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="2cartaAceptacion.php">Carta de aceptación <br> por parte del Esenario real</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio/f3.png" alt="Universe">
+                                    <div class="overlay-p">
+                                        <a href="images/portfolio/f3.png" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="3_informeTrimestral.php">Informe trimestral</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                    </div> <!-- /.row -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio/f4.png" alt="Channel">
+                                    <div class="overlay-p">
+                                        <a href="images/portfolio/f4.png" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="#">Informe Global <br>de servicio</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio/f5.png" alt="Dragonfly">
+                                    <div class="overlay-p">
+                                        <a href="images/portfolio/f5.png" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="#">Carta de termino <br>de Servicio</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="images/portfolio/f6.png" alt="Titanium">
+                                    <div class="overlay-p">
+                                        <a href="images/portfolio/f6.png" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->
+                                <h3 class="portfolio-title"><a href="#">Registro de asistencia</a></h3>
+                            </div> <!-- /.portfolio-item -->
+                        </div> <!-- /.col-md-4 -->
+                    </div> <!-- /.row -->
+<!--                    <div class="row"> //boton pudiera ser util
+                        <div class="col-md-12">
+                            <div class="load-more">
+                                <a href="#portfolio" class="largeButton portfolioBgColor">Load More</a>
+                            </div>
+                        </div>
+                    </div>-->
+                </div> <!-- /#portfolio -->
+                
                    <div id="services" class="section-content">
                        
                          <div class="row">
@@ -178,7 +277,7 @@
                              <div class="col-md-8">
                                 
                              </div>
-                             <div class="col-md-4">
+                             <div class="col-md-4"> 
                                  <div class="story-image">
                                      
                                  </div>

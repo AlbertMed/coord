@@ -187,7 +187,7 @@
                               social; con la finalidad de recopilar información de lo existente
                               como oportunidad de desarrollo profesional futuro.</p><br><br>
 
-                               <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
+                               <p align="right"><a  href ="observacion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
                             
                             </div>   <!-- /col-md-8 -->
                               
