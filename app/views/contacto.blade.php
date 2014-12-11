@@ -25,7 +25,7 @@
         </style>
 
   <!-- inicio del menu -->
-  <div style="background:#344143; line-height:20px; font-weight:bold;">
+<div style="background:#344143; line-height:20px; font-weight:bold;">
 <div style="position: relative; z-index: 5;">
 <!-- start header -->
 	<header>	
@@ -128,7 +128,7 @@
 									<li><a href="#">Estadías</a></li>
 								</ul>
 									<!-- fin sub menu -->
-									<li><a href="seguro-facultativo.html">Seguro Facultativo</a></li>
+									<li><a href="seguro-facultativo">Seguro Facultativo</a></li>
 									<li><a href="#">Becas</a></li>
 								</ul>
 							<!---->
