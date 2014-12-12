@@ -249,7 +249,7 @@
                 </div>
                <div>
                     <a u=image href="#">
-                        <img src="img/main/cbt/11.jpg" />
+                        <img src="http://drive.google.com/uc?export=view&id=0B271YnriIF-3RmMtM0poNXlMYjA" />
                     </a>
                     <div u=caption t="*" class="captionOrange" style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">gran espacio educativo
                     </div>

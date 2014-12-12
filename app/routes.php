@@ -143,3 +143,7 @@ Route::get('seguro-facultativo',function(){
 Route::get('vision',function(){
     return View::make('Vision');
 });
+
+Route::get('aulas',function(){
+    return View::make('aulas');
+});
