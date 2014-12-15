@@ -144,7 +144,7 @@
                                   <div class="story-image">
                                       <h4>Carta de Aceptación</h4><br>
                                           
-                                     <img src="img/cartaaceptacion.jpg" height=500 weight=50>
+                                     <img src="img/cartaaceptacion.jpg" style="max-width: 349px; max-height: 520px">
                                   </div>
                                </div>
                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Empezar  >></a></p>
