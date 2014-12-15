@@ -16,9 +16,8 @@
                  <div class="navigation responsive-menu">
                      <ul>
                          <li class="home"><a href="#templatemo">Inicio</a></li>
-                         <li class="about"><a href="#about">Prácticas Profesionales</a></li>
-                         <li class="contact"><a href="#tipos">Tipos de Prácticas</a></li>
-                         <li class="services"><a href="#services">Informaci&Oacute;n del proceso</a></li>
+                         <li class="about"><a href="#about">Prácticas de Observacion</a></li>
+                         <li class="contact"><a href="#tipos">Formatos</a></li>
                      </ul> <!-- /.main_menu -->
                  </div> <!-- /.responsive_menu -->
              </div> <!-- /responsive_navigation -->
@@ -35,7 +34,7 @@
                          <li class="home"><a href="#templatemo">Inicio</a></li>
                          <li class="about"><a href="#about">Prácticas de Observacion</a></li>
                          <li class="contact"><a href="#tipos">Formatos</a></li>
-                         <li class="services"><a href="#services">Informaci&Oacute;n del proceso</a></li>
+                        
 
                      </ul>
                  </div> <!-- /.navigation -->
@@ -119,52 +118,10 @@
                              </div>
                              </div>
                          </div> <!-- /.row -->
-                     </div> <!-- /#about -->
-
-
-                 <div id="tipos" class="section-content">
+                     </div> <!-- /#about -->                 
                      
-                         <div class="row">
-                               <div class="col-md-12">
-                                 <div class="section-title">
-                                     <h2>Documentos</h2>
-                                 </div> <!-- /.section-title -->
-                             </div> <!-- /.col-md-12 -->
-                         </div> <!-- /.row -->
-                      
-
-                         
-                         <div class="row our-tipos">
-                
-                            <div class="col-md-8">                                                         
-                            
-                            </div>   <!-- /col-md-8 -->
-                              
-                               <div class="col-md-4">
-                                  <div class="story-image">
-                                      <h4>Carta de Aceptación</h4><br>
-                                          
-                                     <img src="img/cartaaceptacion.jpg" style="max-width: 349px; max-height: 520px">
-                                  </div>
-                               </div>
-                               <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Empezar  >></a></p>
-                         </div>
-                             
-                            <div class="col-md-4">
-                                 <div class="contac-item">
-                                     <div class="contac-icon">
-                                         <i class="fa fa-laptop fa-2x"></i>
-                                     </div>
-                                      <div class="contac-content">
-                                         <H3><a href="presenta.html" target="_blank"><font color="#fff">Presentación</font></a></H3>
-                                      </div>
-                                 </div> <!-- /.service-item -->
-                             </div> <!-- /.col-md-4 -->
-                             
-                             
-              </div> <!-- /#tipos -->
-
-<div id="portfolio" class="section-content">
+                                                                                    
+<div id="tipos" class="section-content">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title">
@@ -172,130 +129,41 @@
                             </div> <!-- /.section-title -->
                         </div> <!-- /.col-md-12 -->
                     </div> <!-- /.row -->
+                    <h3 class="portfolio-title">Carta de Presentación</h3>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="img/cartaaceptacion.jpg" alt="Fantasy">
+                                <div class="portfolio-thumb">                                     
+                                    <img src="img/cartaaceptacion.jpg">
                                     <div class="overlay-p">
                                         <a href="img/cartaaceptacion.jpg" data-gal="prettyPhoto">
                                             <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
+                                        </a>                                        
+                                    </div>                                    
                                 </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="Formulario_principal.php">SOLICITUD <br> REGISTRO/AUTORIZACIÓN</a></h3>
+                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
                             </div> <!-- /.portfolio-item -->
+                            
+                            
                         </div> <!-- /.col-md-4 -->
+                         <h3 class="portfolio-title">Carta de Aceptación</h3>
                         <div class="col-md-4">
                             <div class="portfolio-item">
                                 <div class="portfolio-thumb">
-                                    <img src="images/portfolio/f2.png" alt="Botany">
+                                    <img src="img/cartaaceptacion.jpg">
                                     <div class="overlay-p">
                                         <a href="images/portfolio/f2.png" data-gal="prettyPhoto">
                                             <i class="fa fa-arrows-alt fa-2x"></i>
                                         </a>
                                     </div>
-                                </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="2cartaAceptacion.php">Carta de aceptación <br> por parte del Esenario real</a></h3>
+                                </div> <!-- /.portfolio-thumb -->                                
+                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
                             </div> <!-- /.portfolio-item -->
                         </div> <!-- /.col-md-4 -->
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="images/portfolio/f3.png" alt="Universe">
-                                    <div class="overlay-p">
-                                        <a href="images/portfolio/f3.png" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="3_informeTrimestral.php">Informe trimestral</a></h3>
-                            </div> <!-- /.portfolio-item -->
-                        </div> <!-- /.col-md-4 -->
-                    </div> <!-- /.row -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="images/portfolio/f4.png" alt="Channel">
-                                    <div class="overlay-p">
-                                        <a href="images/portfolio/f4.png" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="#">Informe Global <br>de servicio</a></h3>
-                            </div> <!-- /.portfolio-item -->
-                        </div> <!-- /.col-md-4 -->
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="images/portfolio/f5.png" alt="Dragonfly">
-                                    <div class="overlay-p">
-                                        <a href="images/portfolio/f5.png" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="#">Carta de termino <br>de Servicio</a></h3>
-                            </div> <!-- /.portfolio-item -->
-                        </div> <!-- /.col-md-4 -->
-                        <div class="col-md-4">
-                            <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="images/portfolio/f6.png" alt="Titanium">
-                                    <div class="overlay-p">
-                                        <a href="images/portfolio/f6.png" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- /.portfolio-thumb -->
-                                <h3 class="portfolio-title"><a href="#">Registro de asistencia</a></h3>
-                            </div> <!-- /.portfolio-item -->
-                        </div> <!-- /.col-md-4 -->
-                    </div> <!-- /.row -->
-<!--                    <div class="row"> //boton pudiera ser util
-                        <div class="col-md-12">
-                            <div class="load-more">
-                                <a href="#portfolio" class="largeButton portfolioBgColor">Load More</a>
-                            </div>
-                        </div>
-                    </div>-->
+                     
                 </div> <!-- /#portfolio -->
                 
-                   <div id="services" class="section-content">
-                       
-                         <div class="row">
-                             <div class="col-md-12">
-                                 <div class="section-title">
-                                     <h2>¿? </h2>
-                                 </div> <!-- /.section-title -->
-                             </div> <!-- /.col-md-12 -->
-                         </div> <!-- /.row -->
-                         <div class="row our-skills">
-
-                             <div class="col-md-8">
-                                
-                             </div>
-                             <div class="col-md-4"> 
-                                 <div class="story-image">
-                                     
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-md-4">
-                                 <div class="service-item">
-                                     <div class="service-icon">
-                                         <i class="fa fa-laptop fa-2x"></i>
-                                     </div>
-                                     <div class="service-content">
-                                         <h3><a href="presenta.html" target="_blank"><font color="#fff">Presentación</font></a></h3>
-
-                                     </div>
-                                 </div> <!-- /.service-item -->
-                             </div> <!-- /.col-md-4 -->
-                     </div> <!-- /#services -->
-
+                 
 
 
                  </div> <!-- /.container-fluid -->
