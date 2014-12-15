@@ -142,7 +142,7 @@
 							<li class="dropdown">
 							<a href="#">Planta Fisica <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
-								<li><a href="#">Aulas</a></li>
+								<li><a href="aulas">Aulas</a></li>
 								<li><a href="#">Laboratorios</a></li>
 								<li><a href="#">Centro de computo</a></li>
 								<li><a href="#">Tallere de Autotronica</a></li>
@@ -161,7 +161,7 @@
 								</ul>
 							<!---->
 								<li><a href="#">Zona Deportiva</a></li>
-								<li><a href="#">Sala de usos multiples</a></li>
+								<li><a href="sala-de-usos-multiples">Sala de usos multiples</a></li>
 								<li><a href="#">Areas verdes</a></li>
 							</ul>
 							</li> 

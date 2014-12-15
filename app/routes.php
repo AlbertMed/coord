@@ -147,3 +147,7 @@ Route::get('vision',function(){
 Route::get('aulas',function(){
     return View::make('aulas');
 });
+
+Route::get('sala-de-usos-multiples',function(){
+    return View::make('usosMultiples');
+});
