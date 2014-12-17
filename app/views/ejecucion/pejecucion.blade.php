@@ -16,7 +16,7 @@
                  <div class="navigation responsive-menu">
                      <ul>
                          <li class="home"><a href="#templatemo">Inicio</a></li>
-                         <li class="about"><a href="#about">Prácticas de Observacion</a></li>
+                         <li class="about"><a href="#about">Prácticas de Ejecución</a></li>
                          <li class="contact"><a href="#tipos">Formatos</a></li>
                      </ul> <!-- /.main_menu -->
                  </div> <!-- /.responsive_menu -->
@@ -32,7 +32,7 @@
                  <div class="navigation">
                      <ul class="main-menu">
                          <li class="home"><a href="#templatemo">Inicio</a></li>
-                         <li class="about"><a href="#about">Prácticas de Observacion</a></li>
+                         <li class="about"><a href="#about">Prácticas de Ejecución</a></li>
                          <li class="contact"><a href="#tipos">Formatos</a></li>
                         
 
@@ -109,7 +109,7 @@
                          </div> <!-- /.row -->
                          <div class="row our-story">
                              <div class="col-md-8">                                 
-                              hola
+                              Acu
                              </div>
                              <div class="col-md-4">
                                  <div class="story-image">
@@ -139,9 +139,9 @@
                             </div>
                             <div class="portfolio-item">
                                 <div class="portfolio-thumb">                                     
-                                    <img src="img/cartaaceptacion.jpg">
+                                    <img src="img/pobservacion/cartaaceptacion.jpg">
                                     <div class="overlay-p">
-                                        <a href="img/cartaaceptacion.jpg" data-gal="prettyPhoto">
+                                        <a href="img/pobservacion/cartaaceptacion.jpg" data-gal="prettyPhoto">
                                             <i class="fa fa-arrows-alt fa-2x"></i>
                                         </a>                                        
                                     </div>                                    

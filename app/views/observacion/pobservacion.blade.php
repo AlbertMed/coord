@@ -133,24 +133,31 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="row">
-                                <div class="col-md-12">
-                                   
-                                </div>
-                            </div>
-                            <div class="portfolio-item">
-                                <div class="portfolio-thumb">                                     
-                                    <img src="img/cartaaceptacion.jpg">
-                                    <div class="overlay-p">
-                                        <a href="img/cartaaceptacion.jpg" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>                                        
-                                    </div>                                    
-                                </div> <!-- /.portfolio-thumb -->
-                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
+                                <div class="col-md-6">
+                                    <div style="text-align:center; margin-left: 400px;"> 
+                                   pruba de como se tine que llenar los formularios de manera que esten a la derecha de todo
+                                   <br>jfiurh<br>fuhfiurh<br>jfiu<br>jriufir<br>jhfeiuhfe<br>kefkhfuh<br>kjfeiuf<br>hjfrufuhr
+                                   </div>
+                                </div> 
+                                <div class="col-md-6">
+                                   <div style=" margin-rigth:0px;"> 
+                                     <div class="portfolio-item">
+                                       <div class="portfolio-thumb">                                     
+                                         <img src="img/cartaaceptacion.jpg">
+                                           <div class="overlay-p">
+                                             <a href="img/cartaaceptacion.jpg" data-gal="prettyPhoto">
+                                               <i class="fa fa-arrows-alt fa-2x"></i>
+                                             </a>                                        
+                                           </div>                                    
+                                      </div> <!-- /.portfolio-thumb -->
+                                      <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
                             </div> <!-- /.portfolio-item -->
                             
                             
                         </div> <!-- /.col-md-4 -->
+                        </div>
+                            </div>
+                           </div>
                          <h3 class="portfolio-title">Carta de Aceptación</h3>
                         <div class="col-md-4">
                             <div class="portfolio-item">

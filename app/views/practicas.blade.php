@@ -177,7 +177,7 @@
                          <div class="row our-tipos">
 
                             <div class="col-md-8">
-                              <h3>Prácticas de observación:</h3>
+                              <h3>Prácticas de Observación:</h3>
                               <p align="justify">El estudiante con la orientación y 
                               asesoría del profesor que imparte la materia de Dinámicas 
                               Productivas Regionales y los titulares del módulo profesional I,
@@ -188,6 +188,21 @@
                               como oportunidad de desarrollo profesional futuro.</p><br><br>
 
                                <p align="right"><a  href ="observacion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
+                            
+                            </div>   <!-- /col-md-8 -->
+                            
+                             <div class="col-md-8">
+                              <h3>Prácticas de Ejecución:</h3>
+                              <p align="justify">El estudiante con la orientación y 
+                              asesoría del profesor que imparte la materia de Dinámicas 
+                              Productivas Regionales y los titulares del módulo profesional I,
+                              coordinados por quien imparte el submódulo de Instrumenta la 
+                              práctica,  participa en el reconocimiento del ámbito laboral en 
+                              las áreas  de producción  de bienes o servicios en su entorno 
+                              social; con la finalidad de recopilar información de lo existente
+                              como oportunidad de desarrollo profesional futuro.</p><br><br>
+
+                               <p align="right"><a  href ="ejecucion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
                             
                             </div>   <!-- /col-md-8 -->
                               

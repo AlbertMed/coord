@@ -67,6 +67,9 @@ Route::get('/registro',function(){//falta revisar...
 Route::get('observacion', function(){
  return View::make('observacion.pobservacion'); });//necesita estar logeado checar
  
+ Route::get('ejecucion', function(){
+ return View::make('ejecucion.pejecucion'); });//necesita estar logeado checar
+ 
  Route::get('index',function(){
      return View::make('index'); });
      
