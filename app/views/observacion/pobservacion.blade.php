@@ -3,11 +3,23 @@
     <head>
     <title>Documentos Practicas</title>
         @include('includes.stylesEncabezado')
-    </head>
+        <!-- CSS de Bootstrap -->
+        
 
-    
+         <style type="text/css">
+            #contenedor {
+                display: table;
+            }
+            #contenidos {
+                display: table-row;
+            }
+            #columna1, #columna2, #columna3 {
+                display: table-cell;
+                width: 400px;
+            }
+        </style>
+    </head>    
     <body>
-
       <!-- This one in here is responsive menu for tablet and mobiles -->
              <div class="responsive-navigation visible-sm visible-xs">
                  <a href="#" class="menu-toggle-btn">
@@ -132,16 +144,10 @@
                     <h3 class="portfolio-title">Carta de Presentación</h3>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div style="text-align:center; margin-left: 400px;"> 
-                                   pruba de como se tine que llenar los formularios de manera que esten a la derecha de todo
-                                   <br>jfiurh<br>fuhfiurh<br>jfiu<br>jriufir<br>jhfeiuhfe<br>kefkhfuh<br>kjfeiuf<br>hjfrufuhr
-                                   </div>
-                                </div> 
-                                <div class="col-md-6">
-                                   <div style=" margin-rigth:0px;"> 
-                                     <div class="portfolio-item">
+                             <div id="contenedor">
+                               <div id="contenidos">
+                                  <div id="columna1">imagen de muestra  
+                                  <div class="portfolio-item">
                                        <div class="portfolio-thumb">                                     
                                          <img src="img/cartaaceptacion.jpg">
                                            <div class="overlay-p">
@@ -150,17 +156,197 @@
                                              </a>                                        
                                            </div>                                    
                                       </div> <!-- /.portfolio-thumb -->
-                                      <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
+                                                                                                      
                             </div> <!-- /.portfolio-item -->
-                            
-                            
-                        </div> <!-- /.col-md-4 -->
-                        </div>
                             </div>
+                                  <div id="columna2"><h4>¡Datos personales!</h4> 
+                                  <form class="form-horizontal">
+                                         <div class="form-group">
+                                             <label class="control-label col-xs-3">Nombre:</label>
+                                                <div class="col-xs-3">
+                                                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                                                </div>
+                                         </div>
+                                         <div class="form-group">
+                                            <label class="control-label col-xs-3">Semestre:</label>
+                                              <div class="col-xs-3">
+                                                 <input type="text" class="form-control" id="inputSemestre" placeholder="Semestre">
+                                               </div>
+                                          </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-3">Carrera:</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="inputCarrera" placeholder="Carrera">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-1">Inicio:</label>
+                <div class="col-xs-1">
+                    <select class="form-control col-xs-1" placeholder="dia">
+                        <option>Dia</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </div>
+                <div class="col-xs-1">
+                    <select class="form-control">
+                        <option>Mes</option>
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo</option>
+                        <option>Abril</option>
+                        <option>Mayo</option>
+                        <option>Junio</option>
+                        <option>Julio</option>
+                        <option>Agosto</option>
+                        <option>Septiembre</option>
+                        <option>Octubre</option>
+                        <option>Noviembre</option>
+                        <option>Diciembre</option>
+                    </select>
+                </div>
+                 </div>
+                 <div class="form-group">
+                <label class="control-label col-xs-3">Fin :</label>
+                <div class="col-xs-1">
+                    <select class="form-control" placeholder="dia">
+                        <option>Dia</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                </div>
+                <div class="col-xs-1">
+                    <select class="form-control">
+                        <option>Mes</option>
+                        <option>Enero</option>
+                        <option>Febrero</option>
+                        <option>Marzo</option>
+                        <option>Abril</option>
+                        <option>Mayo</option>
+                        <option>Junio</option>
+                        <option>Julio</option>
+                        <option>Agosto</option>
+                        <option>Septiembre</option>
+                        <option>Octubre</option>
+                        <option>Noviembre</option>
+                        <option>Diciembre</option>
+                    </select>
+                </div>
+                <div class="col-xs-1">
+                    <select class="form-control">
+                        <option>Año</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                    </select>
+                </div>
+            </div>
+            <h4>¡Datos de la empresa!</h4>
+            <div class="form-group">
+                <label class="control-label col-xs-3">Nombre:</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Responsable directo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3">Cargo:</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3">Direccion:</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Direccion">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3">Telefono:</label>
+                <div class="col-xs-3">
+                    <input type="tel" class="form-control" id="inputNombre" placeholder="Telefono">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-4">
+                    <input type="reset" class="btn btn-default" value="Limpiar">
+                </div>
+            </div>
+        </form>
+                                  </div>
+                               </div>
+                            </div>
+                            <br><br><br>
+                                      <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
+                 
+                          
                            </div>
                          <h3 class="portfolio-title">Carta de Aceptación</h3>
                         <div class="col-md-4">
-                            <div class="portfolio-item">
+                            <div id="contenedor">
+                            <div id="contenidos">
+                             <div id="columna1">información de columna 1   
+                                  <div class="portfolio-item">
                                 <div class="portfolio-thumb">
                                     <img src="img/cartaaceptacion.jpg">
                                     <div class="overlay-p">
@@ -168,9 +354,15 @@
                                             <i class="fa fa-arrows-alt fa-2x"></i>
                                         </a>
                                     </div>
-                                </div> <!-- /.portfolio-thumb -->                                
+                                </div> <!-- /.portfolio-thumb -->    
+                              </div> <!-- /.portfolio-item -->
+                             </div>
+                               <div id="columna2">información de columna 2   </div>
+                            </div>
+                          </div>
+                          <br><br>                              
                                 <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
-                            </div> <!-- /.portfolio-item -->
+                          
                         </div> <!-- /.col-md-4 -->
                      
                 </div> <!-- /#portfolio -->
@@ -210,8 +402,14 @@
 
              </div> <!-- /#main-content -->
 
+           <!-- Librería jQuery requerida por los plugins de JavaScript -->
+        <script src="http://code.jquery.com/jquery.js"></script>
 
-     <script src="js/jquery-1.10.2.min.js"></script>
+        <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+             incluir archivos JavaScript individuales de los únicos
+             plugins que utilices) -->
+             <script src="dist/js/bootstrap.min.js"></script>
+             <script src="js/jquery-1.10.2.min.js"></script>
              <script src="js/jquery.singlePageNav.js"></script>
              <script src="js/jquery.flexslider.js"></script>
              <script src="js/jquery.prettyPhoto.js"></script>
