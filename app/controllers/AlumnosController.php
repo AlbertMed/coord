@@ -9,7 +9,7 @@ class AlumnosController extends BaseController
 
 	public function saludo()
 	{
-		return 'hola administrador';
+		return 'hiadministrador';
 	}
 
 
