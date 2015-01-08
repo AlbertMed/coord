@@ -67,25 +67,26 @@
                        <div id="columna2">
                                   
  <!-- inicia formulario    ********************************************-->
-                        <form class="form-horizontal" method="post" action="/es">
+                        <form class="form-horizontal" method="POST" action="cartaPresentacion">
+                            
                                        
                                     <div class="form-group">
                                        <h4>¡Datos personales!</h4> 
                                        
                                                 <label class="control-label col-xs-3">
                                             Inicio:</label>  <div class="col-xs-3">
-                                                <input type="text"  class="form-control" name="start" id="date" placeholder="Inicio de Servicio"/>
+                                                <input type="text"  class="form-control" name="Finicio" id="date" placeholder="Inicio de Servicio"/>
                                                 </div>
                                                 
                                                 <label class="control-label col-xs-3">
                                             Final</label> <div class="col-xs-3">
-                                                <input type="text"  class="form-control" name="end"   id="date1"placeholder="Fin del servicio"/>
+                                                <input type="text"  class="form-control" name="Ffinal"   id="date1"placeholder="Fin del servicio"/>
                                                  </div>                                                 
                                                                                                    
                                                  <label class="control-label col-xs-3">
                                             Semestre:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" class="form-control" id="inputSemestre" placeholder="Semestre">
+                                                 <input type="text" name="semestre" class="form-control" id="inputSemestre" placeholder="Semestre">
                                                  </div>
                                                   
                                                  <br><br>
@@ -94,30 +95,30 @@
                                                  <label class="control-label col-xs-3">
                                              Nombre:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" class="form-control" id="inputNombre" placeholder="Responsable directo">                                                
+                                                 <input type="text" name="NombreResponsable" class="form-control" id="inputNombre" placeholder="Responsable directo">                                                
                                                  </div>
-                                                                                                 
+                                                                                  
                                                  <label class="control-label col-xs-3">
                                              Cargo:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
+                                                 <input type="text" name="CargoResponsable" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
                                                  </div>                                                 
                                                                                                  
                                                  <label class="control-label col-xs-3">
                                              Direccion:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" class="form-control" id="inputNombre" placeholder="Direccion">
+                                                 <input type="text" name="DireccionLugar" class="form-control" id="inputNombre" placeholder="Direccion">
                                                  </div>                                                 
                                                                                                  
                                                  <label class="control-label col-xs-3">
                                              Teléfono:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="tel" class="form-control" id="inputNombre" placeholder="Teléfono">
+                                                 <input type="tel" name="TeleLugar" class="form-control" id="inputNombre" placeholder="Teléfono">
                                                  </div> 
                                                  </div>                                                
                                  
                             <br>
-                                      <p align="center"><a  type="submit" class="btn btn-primary btn-lg">Descarga >></a></p>                                                                
+                                      <p align="center"><input name="enviar" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
                         </form>
                             <!-- termina formulario    ********************************************-->                   
                            <br><br><br>
@@ -134,9 +135,9 @@
                              <div id="columna1">información de columna 1   
                                   <div class="portfolio-item">
                                 <div class="portfolio-thumb">
-                                    <img src="img/cartaaceptacion.jpg">
+                                    <img src="aquiva una img">
                                     <div class="overlay-p">
-                                        <a href="images/portfolio/f2.png" data-gal="prettyPhoto">
+                                        <a href="aqui va una img" data-gal="prettyPhoto">
                                             <i class="fa fa-arrows-alt fa-2x"></i>
                                         </a>
                                     </div>

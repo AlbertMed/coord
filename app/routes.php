@@ -17,7 +17,7 @@ Route::get('/hello', function()
     
 });
 
-Route::get('/', function()
+Route::get('login', function()
             {
                  if (Session::has('in'))
                  {
@@ -34,6 +34,7 @@ Route::post('login', 'UserLogin@user');
 
 Route::get('/logout', 'UserLogin@logout');
 
+Route::post('cartaPresentacion', 'FPobservacion@postCartapres');
 //Route::get('/prueba','AlumnosController@postCreate');
 
 //Route::controller('/alumno','AlumnosController');
@@ -74,7 +75,7 @@ Route::get('observacion', function(){
 
 
  
- Route::get('index',function(){
+ Route::get('/',function(){
      return View::make('index'); });
      
 Route::get('mision',function(){
