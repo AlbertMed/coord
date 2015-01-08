@@ -69,6 +69,10 @@ Route::get('observacion', function(){
  
  Route::get('ejecucion', function(){
  return View::make('ejecucion.pejecucion'); });//necesita estar logeado checar
+
+
+
+
  
  Route::get('index',function(){
      return View::make('index'); });
@@ -153,4 +157,8 @@ Route::get('aulas',function(){
 
 Route::get('sala-de-usos-multiples',function(){
     return View::make('usosMultiples');
+});
+
+Route::get('es',function(){
+    return View::make('observacion/ejemplo');
 });

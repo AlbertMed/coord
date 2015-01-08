@@ -268,12 +268,12 @@
             <!-- jssor slider bullet navigator skin 01 -->
            <style>
                 /*
-            .jssorb01 div           (normal)
-            .jssorb01 div:hover     (normal mouseover)
-            .jssorb01 .av           (active)
-            .jssorb01 .av:hover     (active mouseover)
-            .jssorb01 .dn           (mousedown)
-            */
+                    .jssorb01 div           (normal)
+                    .jssorb01 div:hover     (normal mouseover)
+                    .jssorb01 .av           (active)
+                    .jssorb01 .av:hover     (active mouseover)
+                    .jssorb01 .dn           (mousedown)
+                */
                 .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
                     filter: alpha(opacity=70);
                     opacity: .7;
@@ -305,13 +305,13 @@
             <style>
                 /* jssor slider arrow navigator skin 05 css */
                 /*
-            .jssora05l              (normal)
-            .jssora05r              (normal)
-            .jssora05l:hover        (normal mouseover)
-            .jssora05r:hover        (normal mouseover)
-            .jssora05ldn            (mousedown)
-            .jssora05rdn            (mousedown)
-            */
+                        .jssora05l              (normal)
+                        .jssora05r              (normal)
+                        .jssora05l:hover        (normal mouseover)
+                        .jssora05r:hover        (normal mouseover)
+                        .jssora05ldn            (mousedown)
+                        .jssora05rdn            (mousedown)
+                */
                 .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn {
                     position: absolute;
                     cursor: pointer;
@@ -358,5 +358,5 @@
     <script src="js/main/jquery.js"></script>
 	<script src="js/main/custom.js"></script>
     </body>
-
+    
 </html>
