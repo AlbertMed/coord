@@ -9,9 +9,7 @@ class FPobservacion extends BaseController
 
 	public function postCartapres()
 	{
-		if(isset){
-			
-		}
+		if(isset)
 		return View::make('observacion.pobservacion');
 
 	}
