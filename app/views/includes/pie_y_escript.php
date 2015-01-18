@@ -32,34 +32,27 @@
               <!-- After including the date picker scripts -->
                                             <script>
                                               $(function() {
+                                                   
                                                    jQuery.extend( jQuery.fn.pickadate.defaults, {
-                                                          monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 
-                                                          'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ]
+                                                          monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo','Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
+                                                          weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
+                                                          formatSubmit: 'yyyy-mm-dd'
                                                       });
                                                 // Enable Pickadate on an input field
-                                                $('#date').pickadate();
-                                                   formatSubmit : 'mmm-dd-yyyy'
-                                                   hiddenName : true
-                                              }); 
-                                            </script>
-                                            <script>
-                                              $(function() {
-                                                   jQuery.extend( jQuery.fn.pickadate.defaults, {
-                                                          monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 
-                                                          'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ]
+                                                
+                                                $('#date').pickadate({
+                                                        formatSubmit : 'yyyy-mm-dd',
+                                                        format : 'yyyy-mm-dd'
                                                       });
-                                                // Enable Pickadate on an input field
-                                                $('#date1').pickadate();
-                                                   formatSubmit : 'mmm-dd-yyyy'
-                                                   hiddenName : true
+                                                $('#date1').pickadate({
+                                                        formatSubmit : 'yyyy-mm-dd',
+                                                        format : 'yyyy-mm-dd'
+                                                     });                                                   
                                               }); 
-                                              
                                             </script>
-                                           
-
            <!-- Librería jQuery requerida por los plugins de JavaScript -->
         <script src="http://code.jquery.com/jquery.js"></script>
-
+         
         <!-- Todos los plugins JavaScript de Bootstrap (también puedes
              incluir archivos JavaScript individuales de los únicos
              plugins que utilices) -->

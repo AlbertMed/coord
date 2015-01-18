@@ -73,48 +73,56 @@
                                     <div class="form-group">
                                        <h4>¡Datos personales!</h4> 
                                        
-                                                <label class="control-label col-xs-3">
+                                                 <label class="control-label col-xs-3">
                                             Inicio:</label>  <div class="col-xs-3">
-                                                <input type="text"  class="form-control" name="Finicio" id="date" placeholder="Inicio de Servicio"/>
-                                                </div>
+                                                 <input type="text" name="Finicio" value="<?php echo Input::old('Finicio');?>" class="form-control" id="date" placeholder="Inicio de Servicio"/>
+                                                 <div class="alert-danger"><?php echo $errors->first('Finicio');?></div>
+                                                 </div>
                                                 
-                                                <label class="control-label col-xs-3">
+                                                 <label class="control-label col-xs-3">
                                             Final</label> <div class="col-xs-3">
-                                                <input type="text"  class="form-control" name="Ffinal"   id="date1"placeholder="Fin del servicio"/>
+                                                 <input type="text"  class="form-control" name="Ffinal" value="<?php echo Input::old('Ffinal'); ?>" id="date1"  placeholder="Fin del servicio"/>
+                                                 <div class="alert-danger"><?php echo $errors->first('Ffinal');?></div>
                                                  </div>                                                 
                                                                                                    
                                                  <label class="control-label col-xs-3">
-                                            Semestre:</label>
+                                            Semestre que cursas:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" name="semestre" class="form-control" id="inputSemestre" placeholder="Semestre">
+                                                 <input type="text" name="semestre" value="<?php echo Input::old('semestre'); ?>" class="form-control" id="inputSemestre" placeholder="Semestre">
+                                                 <div class="alert-danger"><?php echo $errors->first('semestre');?></div>
                                                  </div>
                                                   
                                                  <br><br>
                                       <h4>¡Datos de la empresa!</h4>
                                                 
                                                  <label class="control-label col-xs-3">
-                                             Nombre:</label>
+                                             Nombre Completo:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" name="NombreResponsable" class="form-control" id="inputNombre" placeholder="Responsable directo">                                                
+                                                 <input type="text" name="NombreResponsable" value="<?php echo Input::old('NombreResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Responsable directo">
+                                                 <div class="alert-danger"><?php echo $errors->first('NombreResponsable');?></div>                                                
                                                  </div>
                                                                                   
                                                  <label class="control-label col-xs-3">
                                              Cargo:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" name="CargoResponsable" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
+                                                 <input type="text" name="CargoResponsable" value="<?php echo Input::old('CargoResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
+                                                 <div class="alert-danger"><?php echo $errors->first('CargoResponsable');?></div>
                                                  </div>                                                 
                                                                                                  
                                                  <label class="control-label col-xs-3">
-                                             Direccion:</label>
+                                             Dirección:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" name="DireccionLugar" class="form-control" id="inputNombre" placeholder="Direccion">
+                                                 <input type="text" name="DireccionLugar" value="<?php echo Input::old('DireccionLugar'); ?>" class="form-control" id="inputNombre" placeholder="Dirección de la empresa">
+                                                 <div class="alert-danger"><?php echo $errors->first('DireccionLugar');?></div>
                                                  </div>                                                 
                                                                                                  
                                                  <label class="control-label col-xs-3">
                                              Teléfono:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="tel" name="TeleLugar" class="form-control" id="inputNombre" placeholder="Teléfono">
+                                                 <input type="tel" name="TeleLugar" value="<?php echo Input::old('TeleLugar'); ?>" class="form-control" id="inputNombre" placeholder="Teléfono de la empresa">
+                                                 <div class="alert-danger"><?php echo $errors->first('TeleLugar');?></div>
                                                  </div> 
+                                                 
                                                  </div>                                                
                                  
                             <br>

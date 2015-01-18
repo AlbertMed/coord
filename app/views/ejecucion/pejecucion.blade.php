@@ -139,9 +139,9 @@
                             </div>
                             <div class="portfolio-item">
                                 <div class="portfolio-thumb">                                     
-                                    <img src="img/pobservacion/cartaaceptacion.jpg">
+                                    <img src="img/pejecucion/cartapresentacion.jpg">
                                     <div class="overlay-p">
-                                        <a href="img/pobservacion/cartaaceptacion.jpg" data-gal="prettyPhoto">
+                                        <a href="img/pejecucion/cartaprecentacion.pdf" data-gal="prettyPhoto">
                                             <i class="fa fa-arrows-alt fa-2x"></i>
                                         </a>                                        
                                     </div>                                    
@@ -164,11 +164,48 @@
                                 </div> <!-- /.portfolio-thumb -->                                
                                 <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
                             </div> <!-- /.portfolio-item -->
+                            
                         </div> <!-- /.col-md-4 -->
-                     
+                       <h3 class="portfolio-title">Registro de asistencia</h3>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="img/pejecucion/Registroasistencias.jpg">
+                                    <div class="overlay-p">
+                                        <a href="img/pejecucion/Registroasistencias.pdf" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->                                
+                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
+                            </div> <!-- /.portfolio-item -->
                 </div> <!-- /#portfolio -->
                 
-                 
+                </div> <!-- /.col-md-4 -->
+                 <h3 class="portfolio-title">convenio</h3>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <div class="portfolio-thumb">
+                                    <img src="img/pejecucion/convenio1.jpg">
+                                    <img src="img/pejecucion/convenio2.jpg">
+                                    <img src="img/pejecucion/convenio3.jpg">
+                                    <img src="img/pejecucion/convenio4.jpg">
+                                    <img src="img/pejecucion/convenio5.jpg">
+                                    <div class="overlay-p">
+                                        <a href="img/pejecucion/convenio.pdf" data-gal="prettyPhoto">
+                                        <a href="img/pejecucion/convenio.pdf" data-gal="prettyPhoto">
+                                        <a href="img/pejecucion/convenio.pdf" data-gal="prettyPhoto">
+                                        <a href="img/pejecucion/convenio.pdf" data-gal="prettyPhoto">
+                                        <a href="img/pejecucion/convenio.pdf" data-gal="prettyPhoto">
+                                            <i class="fa fa-arrows-alt fa-2x"></i>
+                                        </a>
+                                    </div>
+                                </div> <!-- /.portfolio-thumb -->                                
+                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
+                            </div> <!-- /.portfolio-item -->
+                </div> <!-- /#portfolio -->
+                
+                </div> <!-- /.col-md-4 -->
 
 
                  </div> <!-- /.container-fluid -->

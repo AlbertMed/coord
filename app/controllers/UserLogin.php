@@ -1,23 +1,35 @@
 <?php
  
-class UserLogin extends BaseController {
- 
-    public function user()
-    {
+class UserLogin extends BaseController {       
+    
+    public function user(){
         // get POST data
         $userdata = array(
             'nombre' => Input::get('username'),
             'password' => Input::get('password')
         );
+        
+        
       
-        if(Auth::attempt($userdata))
-        {
-            Session::put('in',true);
-            return View::make('practicas');    
-        }
-        else
-        {            
-			return Redirect::to('/')->with('login_errors',true);
+        if(Auth::attempt($userdata)){
+            
+           // $con = DB::connection('mysql');
+             $matricula = Input::get('username');
+            
+           
+             $resultado = DB::table('alumnos')->where('nombre', $matricula)->first();          
+           
+            
+             Session::put('nom',$resultado->nombre);
+             Session::put('nomP',$resultado->apaterno);
+             Session::put('nomM',$resultado->amaterno);
+             Session::put('estatus',$resultado->situacion);
+         
+             $resultado = DB::disconnect('mysql');
+               
+            return View::make('practicas', array('res'=>$resultado));    
+        }else{            
+			return Redirect::to('/login')->with('login_errors',true);
         }
     }
 
