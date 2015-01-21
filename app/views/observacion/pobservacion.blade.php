@@ -49,12 +49,12 @@
                         <div class="col-md-4">
                              <div id="contenedor">
                                <div id="contenidos">
-                                  <div id="columna1">imagen de muestra  
+                                  <div id="columna1"><h4>Imagen de muestra:</h4>  
                                   <div class="portfolio-item">
                                        <div class="portfolio-thumb">                                     
                                          <img src="img/pobservacion/cartaaceptacion.jpg">
                                            <div class="overlay-p">
-                                             <a href="img/pobservacion/cartaaceptacion.jpg" data-gal="prettyPhoto">
+                                             <a href="img/pejecucion/cartapresentacion.pdf" target="_blank" data-gal="prettyPhoto">
                                                <i class="fa fa-arrows-alt fa-2x"></i>
                                              </a>                                        
                                            </div>                                    
@@ -69,22 +69,22 @@
  <!-- inicia formulario    ********************************************-->
                         <form class="form-horizontal" method="POST" action="cartaPresentacion">
                             
-                                       
+                                      
                                     <div class="form-group">
                                        <h4>¡Datos personales!</h4> 
                                        
                                                  <label class="control-label col-xs-3">
                                             Inicio:</label>  <div class="col-xs-3">
-                                                 <input type="text" name="Finicio" value="<?php echo Input::old('Finicio');?>" class="form-control" id="date" placeholder="Inicio de Servicio"/>
+                                                 <input type="text" name="Finicio" value="<?php echo Input::old('Finicio');?>" class="form-control" id="from" placeholder="Fecha de inicio" readonly/>
                                                  <div class="alert-danger"><?php echo $errors->first('Finicio');?></div>
                                                  </div>
                                                 
                                                  <label class="control-label col-xs-3">
                                             Final</label> <div class="col-xs-3">
-                                                 <input type="text"  class="form-control" name="Ffinal" value="<?php echo Input::old('Ffinal'); ?>" id="date1"  placeholder="Fin del servicio"/>
+                                                 <input type="text"  class="form-control" name="Ffinal" value="<?php echo Input::old('Ffinal'); ?>" id="to" placeholder="Fecha de termino" readonly/>
                                                  <div class="alert-danger"><?php echo $errors->first('Ffinal');?></div>
                                                  </div>                                                 
-                                                                                                   
+                                                                                         
                                                  <label class="control-label col-xs-3">
                                             Semestre que cursas:</label>
                                                  <div class="col-xs-3">
@@ -162,6 +162,7 @@
                      
                 </div> <!-- /#portfolio -->
                  </div> <!-- /.container-fluid -->
+                 @include('includes.datepicker')
  @include('includes.pie_y_escript')
   </body>           
 </html>

@@ -13,7 +13,7 @@
 
 Route::get('/hello', function()
 {
-	return View::make('hello');
+	return View::make('observacion.example');
     
 });
 

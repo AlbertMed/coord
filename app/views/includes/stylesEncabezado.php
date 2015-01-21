@@ -1,5 +1,6 @@
         <meta charset="utf-8">
-             
+
+                
         <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
         <link rel="stylesheet" href="lib/FontAwesome/css/font-awesome.min.css">
@@ -24,7 +25,9 @@
                 width: 400px;
             }
         </style>
-                
+                                
+        <link href="css/jquery-ui-1.10.1.css" rel="stylesheet">
+	<link href="css/lugo.datepicker.css" rel="stylesheet">	
                 
         
  

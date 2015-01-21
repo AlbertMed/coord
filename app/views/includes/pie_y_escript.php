@@ -29,43 +29,11 @@
              </div> <!-- /#main-content -->
 
 
-              <!-- After including the date picker scripts -->
-                                            <script>
-                                              $(function() {
-                                                   
-                                                   jQuery.extend( jQuery.fn.pickadate.defaults, {
-                                                          monthsFull: [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo','Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ],
-                                                          weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-                                                          formatSubmit: 'yyyy-mm-dd'
-                                                      });
-                                                // Enable Pickadate on an input field
-                                                
-                                                $('#date').pickadate({
-                                                        formatSubmit : 'yyyy-mm-dd',
-                                                        format : 'yyyy-mm-dd'
-                                                      });
-                                                $('#date1').pickadate({
-                                                        formatSubmit : 'yyyy-mm-dd',
-                                                        format : 'yyyy-mm-dd'
-                                                     });                                                   
-                                              }); 
-                                            </script>
-           <!-- Librería jQuery requerida por los plugins de JavaScript -->
-        <script src="http://code.jquery.com/jquery.js"></script>
-         
-        <!-- Todos los plugins JavaScript de Bootstrap (también puedes
-             incluir archivos JavaScript individuales de los únicos
-             plugins que utilices) -->
              <script src="dist/js/bootstrap.min.js"></script>
-             <script src="js/jquery-1.10.2.min.js"></script>
              <script src="js/jquery.singlePageNav.js"></script>
              <script src="js/jquery.flexslider.js"></script>
              <script src="js/jquery.prettyPhoto.js"></script>
              <script src="js/custom.js"></script>
              <script type='text/javascript' src='js/logging.js'></script>
-    ----------------------------------------------------------------------------------------------------
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <!-- Include library's JS files -->
-    <script src="vendorr/pickadate/compressed/picker.js"></script>
-    <script src="vendorr/pickadate/compressed/picker.date.js"></script>
+  
     ------------------------------------------------------------------------------
