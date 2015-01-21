@@ -13,8 +13,7 @@ class FPobservacion extends BaseController
 			
 			$rules = array(
 				'Finicio' => 'required',
-				'Ffinal'  => 'required',
-				'semestre'=> 'required|integer|between:3,6',
+				'Ffinal'  => 'required',				
 				'NombreResponsable'=> 'required|regex:/^[a-záéíóúäëïöüñ\s]+$/i|min:3|max:50',
 				'CargoResponsable'=> 'required|regex:/^[a-z0-9áéíóúäëïöüñ\s]+$/i|min:3|max:50',
 				'DireccionLugar'=> 'required|regex:/^[a-z0-9áéíóúäëïöüñ\s]+$/i|min:3|max:50',
@@ -23,10 +22,7 @@ class FPobservacion extends BaseController
 			
 			$messages = array(
                 'Finicio.required' => 'La fecha de inicio es requerida',
-				'Ffinal.required' => 'La fecha de término es requerida',
-				'semestre.required' => 'El campo semestre es requerido',
-				'semestre.integer' => 'El campo semestre debe ser un número entero',
-				'semestre.between' => 'El campo semestre debe estar entre 3 y 6',
+				'Ffinal.required' => 'La fecha de término es requerida',								
 				'NombreResponsable.required' => 'Este campo es requerido',
 				'NombreResponsable.min' => 'Este campo debe contener al menos 3 caracteres',
 				'Nombreresponsable.max' => 'Este campo debe contener menos de 50 carateres',
@@ -48,20 +44,26 @@ class FPobservacion extends BaseController
 			
 			if($validator->passes()){
 			
-			$datos = array(
-				$user_matricula = 1027172,
+			$datos = array(				
 				$finicio = Input::get('Finicio'),
 				$ffinal = Input::get('Ffinal'),
 				$semestre = Input::get('semestre'),
 				$Nresponsable = Input::get('NombreResponsable'),
 				$Cresponsable = Input::get('CargoResponsable'),
 				$Direccion = Input::get('DireccionLugar'),
-				$tel = Input::get('TeleLugar')
-			);									
+				$tel = Input::get('TeleLugar'),
+				$matricula = Session::get('matricula')
+			);
+			$conn = DB::connection('mysql');									
+			$user = DB::table('pobservacion')->where('user_matricula', Session::get('matricula'))->first();
 			
-			$conn = DB::connection('mysql');
-			$sql = 'INSERT INTO pobservacion(user_matricula,finicio,ffinal,semestre,Nresponsable,Cresponsable,Direccion,tel) VALUES(?,?,?,?,?,?,?,?)';
-			$conn->insert($sql,$datos);
+            if ($user>0)
+              {		
+				   DB::update('update pobservacion set finicio = ?, ffinal= ?, semestre = ?, Nresponsable = ?, Cresponsable = ?, Direccion = ?, tel = ? where user_matricula = ?', $datos);		  			      
+              }else{
+                  $sql = 'INSERT INTO pobservacion(finicio,ffinal,semestre,Nresponsable,Cresponsable,Direccion,tel,user_matricula) VALUES(?,?,?,?,?,?,?,?)';
+			      $conn->insert($sql,$datos);            
+              }									
 			$conn = DB::disconnect('mysql');
 			$conn = null;
 			

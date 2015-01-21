@@ -88,7 +88,8 @@
                                                  <label class="control-label col-xs-3">
                                             Semestre que cursas:</label>
                                                  <div class="col-xs-3">
-                                                 <input type="text" name="semestre" value="<?php echo Input::old('semestre'); ?>" class="form-control" id="inputSemestre" placeholder="Semestre">
+                                                 <select name="semestre" class="form-control" value="<?php echo Input::old('semestre'); ?>"><option value="cuarto">Cuarto</option><option value="quinto">Quinto</option><option value="sexto">Sexto</option></select>
+                                                 
                                                  <div class="alert-danger"><?php echo $errors->first('semestre');?></div>
                                                  </div>
                                                   

@@ -16,7 +16,7 @@ class Pobservacion extends Migration {
 			    $table->integer('user_matricula');
 			  	$table->date('finicio');
 			  	$table->date('ffinal');
-			  	$table->integer('semestre');
+			  	$table->string('semestre');
 			  	$table->string('Nresponsable');
 			  	$table->string('Cresponsable');
 			  	$table->string('Direccion');

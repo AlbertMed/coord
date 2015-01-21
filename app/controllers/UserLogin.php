@@ -18,13 +18,14 @@ class UserLogin extends BaseController {
             
            
              $resultado = DB::table('alumnos')->where('nombre', $matricula)->first();          
-           
+             //$resultado = DB::table('alumnos')->where('matricula', $matricula)->first();
             
              Session::put('nom',$resultado->nombre);
              Session::put('nomP',$resultado->apaterno);
              Session::put('nomM',$resultado->amaterno);
              Session::put('estatus',$resultado->situacion);
-         
+             Session::put('matricula',$resultado->matricula);
+             
              $resultado = DB::disconnect('mysql');
                
             return View::make('practicas', array('res'=>$resultado));    
