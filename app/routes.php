@@ -11,55 +11,191 @@
 |
 */
 
-/*Route::get('/', function()
+Route::get('/hello', function()
 {
-	return View::make('hello');
-});*/
+	return View::make('observacion.example');
+    
+});
 
-Route::get('/', function()
+Route::get('login', function()
             {
                  if (Session::has('in'))
                  {
-                    return View::make('practicas'); 
+                    return Redirect::to('practicas'); 
                  }else{
-                    return View::make('login'); 
+                    return View::make('auth.login'); 
                  }                                    
         }
         );
-
+Route::get('practicas',array('before' => 'guest', function(){
+         return View::make('auth.login'); 
+}) );
 Route::post('login', 'UserLogin@user');
 
 Route::get('/logout', 'UserLogin@logout');
 
+Route::post('cartaPresentacion', 'FPobservacion@postCartapres');
 //Route::get('/prueba','AlumnosController@postCreate');
 
 //Route::controller('/alumno','AlumnosController');
 
 //Route::get('/saludo','AlumnosController@saludo');
 
-Route::get('/insert', function()
+Route::get('/insert', function()  //falta cambiar valores ... primero hacer registro
 {
 	$alumno = new Alumno;
         
-        $alumno->matricula = 1234;
-        $alumno->nombre = 'Albert';
-        $alumno->apaterno = 'Jiménez';
-        $alumno->amaterno = 'Medina';
-        $alumno->curp = 'JIML910105HDFS04';
-        $alumno->password = Hash::make('Hola');
+        $alumno->matricula = 12345;
+        $alumno->nombre = 'Julio';
+        $alumno->apaterno = 'Robles';
+        $alumno->amaterno = 'Cazares';
+        $alumno->curp = 'JIML910105HDFS45';
+        $alumno->password = Hash::make('julio');
         $alumno->sexo = 'M';
-        $alumno->fechanac = '1991-01-05';
-        $alumno->email = 'albert91.me.d@gmail.com';
+        $alumno->fechanac = '1992-12-30';
+        $alumno->email = 'icsyulio@gmail.com';
         $alumno->situacion = 'servicio';
 
         $alumno->save();
 
 });
 
-Route::get('/registro',function(){
+Route::get('/registro',function(){//falta revisar...
     return View::make('registro');
 });
 
-//Route::get('/login2', 'AuthController@getLogin');
+
+Route::get('observacion', function(){
+ return View::make('observacion.pobservacion'); });//necesita estar logeado checar
+ 
+ Route::get('ejecucion', function(){
+ return View::make('ejecucion.pejecucion'); });//necesita estar logeado checar
 
 
+
+
+ 
+ Route::get('/',function(){
+     return View::make('index'); });
+     
+Route::get('mision',function(){
+     return View::make('pages.Mision');});
+     
+Route::get('bolsa-de-trabajo',function(){
+     return View::make('pages.bolsaTrabajo');});
+ 
+Route::get('contacto',function(){
+  return View::make('pages.contacto');  
+});
+
+Route::get('estrategias',function(){
+    return View::make('pages.Estrategias');
+});
+     
+Route::get('facultades',function(){
+    return View::make('pages.facultades');
+});
+
+Route::get('funciones',function(){
+    return View::make('pages.Funciones');
+});
+
+Route::get('objetivo',function(){
+    return View::make('pages.Objetivos');
+});
+
+Route::get('componentes-cognitivos',function(){
+    return View::make('pages.plantaDC');
+});
+
+Route::get('comunicación-y-lenguaje',function(){
+    return View::make('pages.plantaDCL');
+});
+
+Route::get('ciencias-naturales',function(){
+    return View::make('pages.plantaDCN');
+});
+
+Route::get('coordinación-de-vinculacion',function(){
+    return View::make('pages.plantaDCO');
+});
+
+Route::get('ciencias-sociales-y-humanidades',function(){
+    return View::make('pages.plantaDCS');
+});
+
+Route::get('direccion',function(){
+    return View::make('pages.plantaDD');
+});
+
+Route::get('informática-y-computacion',function(){
+    return View::make('pages.plantaDIC');
+});
+
+Route::get('matemáticas-y-razonamiento-complejo',function(){
+    return View::make('pages.plantaDM');
+});
+
+Route::get('orientacion',function(){
+    return View::make('pages.plantaDO');
+});
+            
+Route::get('seguimiento-egresados',function(){
+    return View::make('pages.segimientoEgresados');
+});
+
+Route::get('seguro-facultativo',function(){
+    return View::make('pages.seguro-facultativo');
+});
+
+Route::get('vision',function(){
+    return View::make('pages.Vision');
+});
+
+Route::get('aulas',function(){
+    return View::make('pages.plantaFisica.aulas');
+});
+
+Route::get('sala-de-usos-multiples',function(){
+    return View::make('pages.plantaFisica.usosMultiples');
+});
+
+Route::get('es',function(){
+    return View::make('observacion/ejemplo');
+});
+
+Route::get('taller-autotronica',function(){
+    return View::make('pages.plantaFisica.autoto');
+});
+
+Route::get('biblioteca',function(){
+    return View::make('pages.plantaFisica.biblio');
+});
+
+Route::get('sala-computacion',function(){
+    return View::make('pages.plantaFisica.computo');
+});
+
+Route::get('laboratorio',function(){
+    return View::make('pages.plantaFisica.laboratorio');
+});
+
+Route::get('sala-recepcional',function(){
+    return View::make('pages.plantaFisica.recepcional');
+});
+
+Route::get('archivo',function(){
+    return View::make('pages.plantaFisica.AreaAdmin.archivo');
+});
+
+Route::get('secretaria-escolar',function(){
+    return View::make('pages.plantaFisica.AreaAdmin.sec_escolar');
+});
+
+Route::get('secretarias',function(){
+    return View::make('pages.plantaFisica.AreaAdmin.secretarias');
+});
+
+Route::get('subdireccion',function(){
+    return View::make('pages.plantaFisica.AreaAdmin.subdireccion');
+});

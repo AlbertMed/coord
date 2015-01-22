@@ -1,10 +1,10 @@
 .main-menu, .responsive-menu ul, .social-member, .progess-bars, .first-footer .social-footer ul { padding: 0; margin: 0; list-style: none; }
 
-body { font-family: 'Nunito', sans-serif;, cursive;, Arial, Helvetice Neue, sans-serif; color: #777777; font-weight: 300; font-style: normal; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; }
+body {  overflow-x: hidden; font-family: 'Nunito', sans-serif, cursive, Arial, Helvetice Neue, sans-serif; color: #777777; font-weight: 300; font-style: normal; -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ -webkit-text-size-adjust: 100%; }
 
 a, a:hover, a:focus { text-decoration: none; -webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif;, Helvetice Neue, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif;}
 
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif;, Helvetice Neue, san
 #portfolio .section-title { border-color: #1dcb7c; }
 #portfolio h2 { background-color: #38e395; }
 
-#contact .section-title { border-color: #cb1d62; }
-#contact h2 { background-color: #e3387c; }
+#tipos .section-title { border-color: #cb1d62; }
+#tipos h2 { background-color: #e3387c; }
 
 a.largeButton { color: white; text-transform: uppercase; font-weight: 700; font-size: 14px; display: inline-block; padding: 10px 20px; border-bottom: 3px solid; }
 
@@ -123,23 +123,36 @@ a.menu-toggle-btn i { line-height: 60px; }
 .story-image { margin-top: 30px; overflow: hidden; }
 .story-image img { width: 60%; height: auto; }
 
-.service-item { background-color: #974dea; color: white; width: 40%;}
-.service-item .service-icon {width: 35%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 20px; height: 30%; }
+.service-item { background-color: #974dea; color: white; width: 38%;}
+.service-item .service-icon {width: 35%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 17px; height: 30%; }
 .service-item .service-content { width: 45%; overflow: hidden; text-align: center; padding: 20px 20px 20px 0; color: white; }
 .service-item .service-content h3 {
 	margin: 0;
-	font-size: 20px;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.contac-item { background-color: #e3387c; color: white; width: 38%;}
+.contac-item .contac-icon {width: 35%; float: left; overflow: hidden; display: inline-block; text-align: center; margin-top: 17px; height: 30%; }
+.contac-item .contac-content { width: 45%; overflow: hidden; text-align: center; padding: 20px 20px 20px 0; color: white; }
+.contac-item .contac-content h3 {
+	margin: 0;
+	font-size: 16px;
 	color: #FFF;
 }
 
 .our-skills { margin-top: 80px; }
 .our-skills h3 { color: #974dea; font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0 0 20px 0; }
 
+.our-tipos { margin-top: 80px; }
+.our-tipos h3 { color: #e3387c; font-weight: 300; text-transform: uppercase; font-size: 24px; margin: 0 0 20px 0; }
+
+
 .progress-bar { background-color: #974dea; text-transform: uppercase; font-size: 12px; }
 
 .portfolio-thumb { overflow: hidden; position: relative; }
-.portfolio-thumb img { width: 100%; height: auto; }
-.portfolio-thumb .overlay-p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(56, 227, 149, 0.9); visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.portfolio-thumb img { width: 90%; height: auto; }
+.portfolio-thumb .overlay-p { position: absolute; top: 0; left: 0; width: 90%; height: 100%; background-color: rgba(175,238,238, 0.5); visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 .portfolio-thumb .overlay-p a { position: absolute; top: 50%; margin-top: -12px; left: 50%; margin-left: -15px; color: white; }
 
 .portfolio-item { margin-bottom: 40px; overflow: hidden; }
