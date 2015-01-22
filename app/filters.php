@@ -59,7 +59,7 @@ Route::filter('lov',function(){
 
 Route::filter('auth.basic', function()
 {
-	return Auth::basic('nombre');
+	return Auth::basic('matricula');
 });
 
 /*

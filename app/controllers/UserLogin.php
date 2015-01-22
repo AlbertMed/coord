@@ -5,7 +5,7 @@ class UserLogin extends BaseController {
     public function user(){
         // get POST data
         $userdata = array(
-            'nombre' => Input::get('username'),
+            'matricula' => Input::get('username'),
             'password' => Input::get('password')
         );
         
@@ -13,18 +13,15 @@ class UserLogin extends BaseController {
       
         if(Auth::attempt($userdata)){
             
-           // $con = DB::connection('mysql');
              $matricula = Input::get('username');
-            
            
-             $resultado = DB::table('alumnos')->where('nombre', $matricula)->first();          
-             //$resultado = DB::table('alumnos')->where('matricula', $matricula)->first();
+             $resultado = DB::table('alumnos')->where('matricula', $matricula)->first();
             
              Session::put('nom',$resultado->nombre);
              Session::put('nomP',$resultado->apaterno);
              Session::put('nomM',$resultado->amaterno);
              Session::put('estatus',$resultado->situacion);
-             Session::put('matricula',$resultado->matricula);
+             Session::put('matricula',$matricula);
              
              $resultado = DB::disconnect('mysql');
                
