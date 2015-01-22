@@ -97,7 +97,7 @@ Route::filter('csrf', function()
 	}
 });
 
-Route::filter('cumpleanios', function()
+Route::filter('cumpleanos', function()
 {
 if (date('d/m') == '23/10') {
         return 'feliz cumple';
