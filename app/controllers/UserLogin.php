@@ -21,11 +21,20 @@ class UserLogin extends BaseController {
              Session::put('nomP',$resultado->apaterno);
              Session::put('nomM',$resultado->amaterno);
              Session::put('estatus',$resultado->situacion);
-             Session::put('matricula',$matricula);
+             Session::put('matricula',$resultado->matricula);
+             Session::put('tipo',$resultado->tipo);
              
              $resultado = DB::disconnect('mysql');
-               
-            return View::make('practicas', array('res'=>$resultado));    
+            switch(Session::get('tipo')){
+                case 0:
+                  return View::make('auth.cambio');
+                  break;
+                case 1:   
+                   return View::make('practicas');
+                   break;
+                 default: break;
+            }
+                
         }else{            
 			return Redirect::to('/login')->with('login_errors',true);
         }

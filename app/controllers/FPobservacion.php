@@ -1,14 +1,14 @@
 <?php
 
-class FPobservacion extends BaseController
-{
-	public function getIndex()
-	{
+class FPobservacion extends BaseController{
+	
+	
+	public function getIndex(){
 		return View::make('observacion.pobservacion');
 	}
 
-	public function postCartapres()
-	{
+	public function postCartapres()	{
+		
 		if(isset($_POST['enviar'])){
 			
 			$rules = array(
@@ -57,8 +57,7 @@ class FPobservacion extends BaseController
 			$conn = DB::connection('mysql');									
 			$user = DB::table('pobservacion')->where('user_matricula', Session::get('matricula'))->first();
 			
-            if ($user>0)
-              {		
+            if ($user>0){		
 				   DB::update('update pobservacion set finicio = ?, ffinal= ?, semestre = ?, Nresponsable = ?, Cresponsable = ?, Direccion = ?, tel = ? where user_matricula = ?', $datos);		  			      
               }else{
                   $sql = 'INSERT INTO pobservacion(finicio,ffinal,semestre,Nresponsable,Cresponsable,Direccion,tel,user_matricula) VALUES(?,?,?,?,?,?,?,?)';

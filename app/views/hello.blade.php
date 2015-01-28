@@ -3,8 +3,6 @@
 		<title>prueba</title>
 	</head>	
 	<body>
-		<?php foreach($res as $datos): ?>
-		nombre: {{$datos->nombre}}
-		<?php endforeach; ?>
+		<h1>ok</h1>
     </body>
 </html>

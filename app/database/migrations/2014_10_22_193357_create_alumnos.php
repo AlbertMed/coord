@@ -10,21 +10,20 @@ class CreateAlumnos extends Migration {
 	 *
 	 * @return void
 	 */
-	public function up()
-	{
-		Schema::create('alumnos', function(Blueprint $table)
-		{		
+	public function up(){
+		Schema::create('alumnos', function(Blueprint $table){		
 			
-  	$table->integer('matricula')->unique()->primary();
-  	$table->string('nombre');
-  	$table->string('apaterno');
-  	$table->string('amaterno');
-  	$table->string('curp')->unique();
-  	$table->string('password');
-  	$table->string('sexo');
-  	$table->date('fechanac');
-  	$table->string('email')->unique();
-  	$table->string('situacion');
+		  	$table->integer('matricula')->unique()->primary();
+		  	$table->string('nombre');
+		  	$table->string('apaterno');
+		  	$table->string('amaterno');
+		  	$table->string('curp')->unique();
+		  	$table->string('password');
+		  	$table->string('sexo');
+		  	$table->date('fechanac');
+		  	$table->string('email')->unique();
+		  	$table->string('situacion');
+			$table->integer('tipo');  
   	
 		});
 		
