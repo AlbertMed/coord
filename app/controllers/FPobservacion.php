@@ -11,18 +11,12 @@ class FPobservacion extends BaseController{
 		
 		if(isset($_POST['enviar'])){
 			
-			$rules = array(
-				'Finicio' => 'required',
-				'Ffinal'  => 'required',				
+			$rules = array(								
 				'NombreResponsable'=> 'required|regex:/^[a-záéíóúäëïöüñ\s]+$/i|min:3|max:50',
-				'CargoResponsable'=> 'required|regex:/^[a-z0-9áéíóúäëïöüñ\s]+$/i|min:3|max:50',
-				'DireccionLugar'=> 'required|regex:/^[a-z0-9áéíóúäëïöüñ\s]+$/i|min:3|max:50',
-				'TeleLugar'=> 'required|digits_between:10,12'
+				'CargoResponsable'=> 'required|regex:/^[a-z0-9áéíóúäëïöüñ\s]+$/i|min:3|max:50'				
 			);
 			
-			$messages = array(
-                'Finicio.required' => 'La fecha de inicio es requerida',
-				'Ffinal.required' => 'La fecha de término es requerida',								
+			$messages = array(               								
 				'NombreResponsable.required' => 'Este campo es requerido',
 				'NombreResponsable.min' => 'Este campo debe contener al menos 3 caracteres',
 				'Nombreresponsable.max' => 'Este campo debe contener menos de 50 carateres',
@@ -30,43 +24,51 @@ class FPobservacion extends BaseController{
 				'CargoResponsable.required' => 'Este campo es requerido',
 				'CargoResponsable.min' => 'Este campo debe contener al menos 3 caracteres',
 				'Cargoresponsable.max' => 'Este campo debe contener menos de 50 carateres',
-				'Cargoresponsable.regex' => 'Este campo tiene un formato inválido',
-				'DireccionLugar.required' => 'Este campo es requerido',
-				'DireccionLugar.min' => 'Este campo debe contener al menos 3 caracteres',
-				'DireccionLugar.max' => 'Este campo debe contener menos de 50 carateres',
-				'DireccionLugar.regex' => 'Este campo tiene un formato inválido',
-				'TeleLugar.required' => 'Este campo es requerido',
-				'TeleLugar.digits_between' => 'El campo teléfono debe tener un formato válido'
-				
+				'Cargoresponsable.regex' => 'Este campo tiene un formato inválido'				
             );
 			
 			$validator = Validator::make(Input::All(), $rules, $messages);
 			
 			if($validator->passes()){
 			
-			$datos = array(				
-				$finicio = Input::get('Finicio'),
-				$ffinal = Input::get('Ffinal'),
-				$semestre = Input::get('semestre'),
+			$datos = array(								
 				$Nresponsable = Input::get('NombreResponsable'),
-				$Cresponsable = Input::get('CargoResponsable'),
-				$Direccion = Input::get('DireccionLugar'),
-				$tel = Input::get('TeleLugar'),
+				$Cresponsable = Input::get('CargoResponsable'),				
 				$matricula = Session::get('matricula')
 			);
 			$conn = DB::connection('mysql');									
 			$user = DB::table('pobservacion')->where('user_matricula', Session::get('matricula'))->first();
 			
-            if ($user>0){		
-				   DB::update('update pobservacion set finicio = ?, ffinal= ?, semestre = ?, Nresponsable = ?, Cresponsable = ?, Direccion = ?, tel = ? where user_matricula = ?', $datos);		  			      
+            if ($user){		
+				   DB::update('update pobservacion set Nresponsable = ?, Cresponsable = ? where user_matricula = ?', $datos);		  			      
               }else{
-                  $sql = 'INSERT INTO pobservacion(finicio,ffinal,semestre,Nresponsable,Cresponsable,Direccion,tel,user_matricula) VALUES(?,?,?,?,?,?,?,?)';
+                  $sql = 'INSERT INTO pobservacion(Nresponsable,Cresponsable,user_matricula) VALUES(?,?,?)';
 			      $conn->insert($sql,$datos);            
               }									
-			$conn = DB::disconnect('mysql');
-			$conn = null;
 			
-			return View::make('observacion.pobservacion');
+			
+			$user2 = DB::table('alumnos')->where('matricula', Session::get('matricula'))->first();
+			//llenado de la plantilla
+			$PHPWord = new PHPWord();
+            $document = $PHPWord->loadTemplate('img/pobservacion/1presentacion/presentacionD.docx');
+			$document->setValue('Encargado', utf8_decode(Input::get('NombreResponsable')));
+            $document->setValue('cargo', utf8_decode(Input::get('CargoResponsable')));		    
+			$document->setValue('nombre', utf8_decode($user2->nombre));
+			$document->setValue('apaterno', utf8_decode($user2->apaterno));
+			$document->setValue('amaterno', utf8_decode($user2->amaterno));
+			$document->setValue('Carrera', utf8_decode($user2->carrera));
+			
+			DB::disconnect('mysql');
+            
+			//no retornamos vista, simplemente hacemos la descarga
+			//CODIGO PARA LA DESCARGA:
+			$temp_file = tempnam(sys_get_temp_dir(), 'PHPWord');
+            $document->save($temp_file);
+
+            header("Content-Disposition: attachment; filename="."presentacionD.docx");
+            readfile($temp_file); 
+            unlink($temp_file); 
+			
 			}else{
 				return Redirect::back()->withInput()->withErrors($validator);
 			}						

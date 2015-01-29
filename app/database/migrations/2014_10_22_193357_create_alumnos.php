@@ -18,6 +18,7 @@ class CreateAlumnos extends Migration {
 		  	$table->string('apaterno');
 		  	$table->string('amaterno');
 		  	$table->string('curp')->unique();
+			$table->string('carrera');
 		  	$table->string('password');
 		  	$table->string('sexo');
 		  	$table->date('fechanac');

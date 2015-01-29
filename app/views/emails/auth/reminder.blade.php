@@ -9,7 +9,8 @@
 		<div>
 			Para restablecer tu contraseña completa este formulario {{ URL::to('password/reset', array($token)) }}.
 		<br>
-			Info: Este link caduca en 30 minutos.
+			
+			<P style="color: red;">Info: Este link caduca en 30 minutos.</P>
 		</div>
 	</body>
 </html>

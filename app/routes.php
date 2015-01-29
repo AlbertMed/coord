@@ -47,15 +47,16 @@ Route::get('/insert', function()  //falta cambiar valores ... primero hacer regi
 {
 	$alumno = new Alumno;
         
-        $alumno->matricula = 1234;
-        $alumno->nombre = 'Luis Alberto';
-        $alumno->apaterno = 'Jimenez';
-        $alumno->amaterno = 'Medina';
-        $alumno->curp = 'JIML910105HDFtr5';
+        $alumno->matricula = 12345;
+        $alumno->nombre = 'Julio Cesar';
+        $alumno->apaterno = 'Robles';
+        $alumno->amaterno = 'Cazares';
+        $alumno->curp = 'JIML910105HDFtr6';
+        $alumno->carrera='Técnico en Informática';
         $alumno->password = Hash::make('hola');
         $alumno->sexo = 'M';
-        $alumno->fechanac = '1990-01-25';
-        $alumno->email = 'albert_me@gmail.com';
+        $alumno->fechanac = '1992-10-30';
+        $alumno->email = 'icsyulio@gmail.com';
         $alumno->situacion = 'servicio';
         $alumno->tipo=0;
 

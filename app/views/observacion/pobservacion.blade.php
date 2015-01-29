@@ -45,8 +45,62 @@
                     </div> <!-- /.row -->
                     
                     <h3 class="portfolio-title">Carta de Presentación</h3>
-                    
-                        <div class="col-md-4">
+                     <div class="col-md-4">
+                             <div id="contenedor">
+                               <div id="contenidos">
+                                  <div id="columna1"><h4>Imagen de muestra:</h4>  
+                                  <div class="portfolio-item">
+                                       <div class="portfolio-thumb">                                     
+                                         <img src="img/pobservacion/1presentacion/presentacionI.jpg">
+                                           <div class="overlay-p">
+                                             <a href="img/pejecucion/cartapresentacion.pdf" target="_blank" data-gal="prettyPhoto">
+                                               <i class="fa fa-arrows-alt fa-2x"></i>
+                                             </a>                                        
+                                           </div>                                    
+                                      </div> <!-- /.portfolio-thumb -->
+                                                                                                      
+                                  </div> <!-- /.portfolio-item -->
+                            </div><!-- /columna1 -->
+                            
+                            
+                       <div id="columna2">
+                                  
+ <!-- inicia formulario    ********************************************-->
+                        <form class="form-horizontal" method="POST" action="cartaPresentacion">
+                            
+                                      
+                                    <div class="form-group">
+                                       
+                                      <h4>¡Datos de la empresa!</h4>
+                                                
+                                                 <label class="control-label col-xs-3">
+                                             Nombre Completo:</label>
+                                                 <div class="col-xs-3">
+                                                 <input type="text" name="NombreResponsable" value="<?php echo Input::old('NombreResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Responsable directo">
+                                                 <div class="alert-danger"><?php echo $errors->first('NombreResponsable');?></div>                                                
+                                                 </div>
+                                                                                  
+                                                 <label class="control-label col-xs-3">
+                                             Cargo:</label>
+                                                 <div class="col-xs-3">
+                                                 <input type="text" name="CargoResponsable" value="<?php echo Input::old('CargoResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
+                                                 <div class="alert-danger"><?php echo $errors->first('CargoResponsable');?></div>
+                                                 </div>                                                 
+                                                                                                 
+                                                 
+                                                 </div>                                                
+                                 
+                            <br>
+                                      <p align="center"><input name="enviar" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
+                        </form>
+                            <!-- termina formulario    ********************************************-->                   
+                           <br><br><br>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                <h3 class="portfolio-title">Carta de Aceptación</h3>
+                <div class="col-md-4">
                              <div id="contenedor">
                                <div id="contenidos">
                                   <div id="columna1"><h4>Imagen de muestra:</h4>  
@@ -54,7 +108,7 @@
                                        <div class="portfolio-thumb">                                     
                                          <img src="img/pobservacion/cartaaceptacion.jpg">
                                            <div class="overlay-p">
-                                             <a href="img/pejecucion/cartapresentacion.pdf" target="_blank" data-gal="prettyPhoto">
+                                             <a href="img/pejecucion/cartaaceptacion.pdf" target="_blank" data-gal="prettyPhoto">
                                                <i class="fa fa-arrows-alt fa-2x"></i>
                                              </a>                                        
                                            </div>                                    
@@ -127,7 +181,7 @@
                                                  </div>                                                
                                  
                             <br>
-                                      <p align="center"><input name="enviar" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
+                                      <p align="center"><input name="enviar2" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
                         </form>
                             <!-- termina formulario    ********************************************-->                   
                            <br><br><br>
@@ -136,32 +190,8 @@
                       </div>
                     </div>
                            
-                           
-                         <h3 class="portfolio-title">Carta de Aceptación</h3>
-                        <div class="col-md-4">
-                            <div id="contenedor">
-                            <div id="contenidos">
-                             <div id="columna1">información de columna 1   
-                                  <div class="portfolio-item">
-                                <div class="portfolio-thumb">
-                                    <img src="aquiva una img">
-                                    <div class="overlay-p">
-                                        <a href="aqui va una img" data-gal="prettyPhoto">
-                                            <i class="fa fa-arrows-alt fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div> <!-- /.portfolio-thumb -->    
-                              </div> <!-- /.portfolio-item -->
-                             </div>
-                               <div id="columna2">información de columna 2   </div>
-                            </div>
-                          </div>
-                          <br><br>                              
-                                <p align="right"><a  href ="practicas/observacion" class="btn btn-primary btn-lg">Descarga >></a></p>  
-                          
-                        </div> <!-- /.col-md-4 -->
-                     
-                </div> <!-- /#portfolio -->
+                        
+                
                  </div> <!-- /.container-fluid -->
                  @include('includes.datepicker')
  @include('includes.pie_y_escript')
