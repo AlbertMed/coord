@@ -65,7 +65,7 @@ class FPobservacion extends BaseController{
 			$temp_file = tempnam(sys_get_temp_dir(), 'PHPWord');
             $document->save($temp_file);
 
-            header("Content-Disposition: attachment; filename="."presentacionD.docx");
+            header("Content-Disposition: attachment; filename="."cartaPresentacion.docx");
             readfile($temp_file); 
             unlink($temp_file); 
 			
