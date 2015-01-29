@@ -17,11 +17,10 @@
             <div id="loginbox" >          
 
                 <form id="loginform" action="login" method="post" >
-    				
                     @if (Session::has('login_errors'))
-                    <p style='color:#FB1D1D' >La matrícula o la curp no son correctas.</p>
+                    <p style='color:#FB1D1D' >La matrícula o la contraseña no son correctas.</p>
                     @else
-                    <p>Introduzca matrícula y curp para continuar.</p>
+                    <p>Introduzca matrícula y contraseña para continuar.</p>
                     @endif
                                   
                     <div class="input-group input-sm">
@@ -36,8 +35,8 @@
                     <div class="footer-login">
                         <div class="pull-left text">
                                
-                              <font size="3px"><a href="forgot_password.php">¿Olvidaste tu password?</a><br>                   
-                 <a href="register.php">¿No tienes una cuenta?. Registrate Aqui.</a></font>
+                              <font size="3px"><a href="password">¿Olvidaste tu password?</a><br>                   
+                
                         </div>
     
                     </div>

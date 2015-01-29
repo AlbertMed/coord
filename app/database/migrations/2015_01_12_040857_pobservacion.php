@@ -14,13 +14,13 @@ class Pobservacion extends Migration {
 	{
 		Schema::create('pobservacion', function(Blueprint $table){		
 			    $table->integer('user_matricula');
-			  	$table->date('finicio');
-			  	$table->date('ffinal');
-			  	$table->string('semestre');
+			  	$table->date('finicio')->default('2015-01-01');
+			  	$table->date('ffinal')->default('2015-01-02');
+			  	$table->string('semestre')->default('primer');
 			  	$table->string('Nresponsable');
 			  	$table->string('Cresponsable');
-			  	$table->string('Direccion');
-			  	$table->string('tel');
+			  	$table->string('Direccion')->default('null');
+			  	$table->string('tel')->default('0000000000');
 				$table->foreign('user_matricula')->references('matricula')->on('alumnos');
 		});
 	}

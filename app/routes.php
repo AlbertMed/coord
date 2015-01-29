@@ -41,20 +41,24 @@ Route::post('cartaPresentacion', 'FPobservacion@postCartapres');
 
 //Route::get('/saludo','AlumnosController@saludo');
 
+Route::post('loginn','Cambios@verifica');
+
 Route::get('/insert', function()  //falta cambiar valores ... primero hacer registro
 {
 	$alumno = new Alumno;
         
         $alumno->matricula = 12345;
-        $alumno->nombre = 'Julio';
+        $alumno->nombre = 'Julio Cesar';
         $alumno->apaterno = 'Robles';
         $alumno->amaterno = 'Cazares';
-        $alumno->curp = 'JIML910105HDFS45';
-        $alumno->password = Hash::make('julio');
+        $alumno->curp = 'JIML910105HDFtr6';
+        $alumno->carrera='Técnico en Informática';
+        $alumno->password = Hash::make('hola');
         $alumno->sexo = 'M';
-        $alumno->fechanac = '1992-12-30';
+        $alumno->fechanac = '1992-10-30';
         $alumno->email = 'icsyulio@gmail.com';
         $alumno->situacion = 'servicio';
+        $alumno->tipo=0;
 
         $alumno->save();
 
@@ -66,7 +70,17 @@ Route::get('/registro',function(){//falta revisar...
 
 
 Route::get('observacion', function(){
- return View::make('observacion.pobservacion'); });//necesita estar logeado checar
+    if(Session::has('nom')){
+        return View::make('observacion.pobservacion');
+    }else{
+        return View::make('auth.login');
+    }
+      
+  });//necesita estar logeado checar
+ 
+ Route::get('password', 'RemindersController@getRemind');
+ Route::post('password', 'RemindersController@postRemind');
+ Route::controller('password', 'RemindersController');
  
  Route::get('ejecucion', function(){
  return View::make('ejecucion.pejecucion'); });//necesita estar logeado checar

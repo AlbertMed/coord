@@ -17,10 +17,10 @@
                  <div class="logo">
                      <h2>Alumno</h2>          
                          @if (Session::has('nom'))
-                                {{Session::get('nom')}} &nbsp;
+                                {{Session::get('nom')}} 
                          @endif
                          @if (Session::has('nomP'))
-                                {{Session::get('nomP')}} &nbsp;
+                                {{Session::get('nomP')}} 
                          @endif
                          @if (Session::has('nomM'))
                                 {{Session::get('nomM')}} &nbsp;

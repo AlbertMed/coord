@@ -4,11 +4,13 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Password Reset</h2>
-
+		
+		<h2>Sistema de la Coordinación del CBT Chapultepec</h2>
 		<div>
-			To reset your password, complete this form: {{ URL::to('password/reset', array($token)) }}.<br/>
-			This link will expire in {{ Config::get('auth.reminder.expire', 60) }} minutes.
+			Para restablecer tu contraseña completa este formulario {{ URL::to('password/reset', array($token)) }}.
+		<br>
+			
+			<P style="color: red;">Info: Este link caduca en 30 minutos.</P>
 		</div>
 	</body>
 </html>
