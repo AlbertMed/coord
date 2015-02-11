@@ -108,14 +108,18 @@
                             
                              <div class="col-md-8">
                               <h3>Prácticas de Ejecución:</h3>
-                              <p align="justify">El estudiante con la orientación y 
-                              asesoría del profesor que imparte la materia de Dinámicas 
-                              Productivas Regionales y los titulares del módulo profesional I,
-                              coordinados por quien imparte el submódulo de Instrumenta la 
-                              práctica,  participa en el reconocimiento del ámbito laboral en 
-                              las áreas  de producción  de bienes o servicios en su entorno 
-                              social; con la finalidad de recopilar información de lo existente
-                              como oportunidad de desarrollo profesional futuro.</p><br><br>
+                              <p align="justify">Es la participación activa del estudiante 
+                              en una actividad productiva y/o de servicios, fuera del horario
+                              escolar y en un escenario real (público o privado) con el propósito
+                              de aplicar las competencias profesionales adquiridas durante su formación,
+                              para que sean evaluadas y acreditadas por los docentes de los módulos
+                              profesionales II y III.<br><br>
+                              
+                              Estas prácticas se desarrollan en el tercer y cuarto semestre durante
+                              los módulos profesionales II y III. Serán evaluadas por los docentes
+                              del módulo a través de instrumentos de evaluación 
+                              (rúbrica y portafolio de evidencias) que permitan identificar el logro
+                               de las competencias profesionales demostradas en el escenario real. </p><br><br>
 
                                <p align="right"><a  href ="ejecucion" class="btn btn-primary btn-lg">Más informacion  >></a></p>                                                         
                             

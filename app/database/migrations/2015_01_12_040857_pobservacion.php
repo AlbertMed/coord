@@ -13,7 +13,7 @@ class Pobservacion extends Migration {
 	public function up()
 	{
 		Schema::create('pobservacion', function(Blueprint $table){		
-			    $table->integer('user_matricula');
+			    $table->string('user_matricula');
 			  	$table->date('finicio')->default('2015-01-01');
 			  	$table->date('ffinal')->default('2015-01-02');
 			  	$table->string('semestre')->default('primer');

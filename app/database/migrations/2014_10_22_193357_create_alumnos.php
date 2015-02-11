@@ -13,7 +13,7 @@ class CreateAlumnos extends Migration {
 	public function up(){
 		Schema::create('alumnos', function(Blueprint $table){		
 			
-		  	$table->integer('matricula')->unique()->primary();
+		  	$table->string('matricula')->unique()->primary();
 		  	$table->string('nombre');
 		  	$table->string('apaterno');
 		  	$table->string('amaterno');
@@ -25,6 +25,7 @@ class CreateAlumnos extends Migration {
 		  	$table->string('email')->unique();
 		  	$table->string('situacion');
 			$table->integer('tipo');  
+			$table->integer('Ndescargas');
   	
 		});
 		

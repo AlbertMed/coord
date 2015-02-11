@@ -30,5 +30,15 @@
 				//$( "#from" ).datepicker( "option", "maxDate", selectedDate );
 			}
 		}).datepicker('widget').wrap('<div class="ll-skin-lugo"/>');
+		
+		$( "#fCartaPresentacion" ).datepicker({
+			dateFormat: "dd 'de' MM 'del' yy",
+			showOtherMonths: true,
+			numberOfMonths: 2,
+			onClose: function( selectedDate ) {
+				//$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+			}
+		}).datepicker('widget').wrap('<div class="ll-skin-lugo"/>');
+		
 	});
 	</script>

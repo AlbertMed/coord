@@ -54,7 +54,7 @@
 
                                  <li>
                                      <div class="slider-caption">
-                                         <h2>Cbt. Lic Julian Diaz Arias</h2>
+                                         <h2>Cbt. Lic Julián Diaz Arias, Chapultepec</h2>
                                          <p>Visitanos en Facebook</p>
                                          <a href="https://es-es.facebook.com/CBT.Lic.Julian.Diaz.Arias" rel="nofollow" class="largeButton homeBgColor">Ir</a>
                                      </div>

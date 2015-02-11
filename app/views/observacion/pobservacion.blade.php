@@ -21,9 +21,16 @@
      <!--                     
                          </div> <!-- /.row -->
                          <div class="row our-story">
-                             <div class="col-md-8">                                 
-                              hola
-                             </div>
+                                                             
+                             <h3>REQUISITOS:</h3>
+                                   <ul class="list-group">
+  <li class="list-group-item">SER ALUMNO INSCRITO</li>
+  <li class="list-group-item">SER ALUMNO REGULAR (NO ADEUDAR NINGUNA MATERIA)</li>
+  <li class="list-group-item">CONTAR CON LA AUTORIZACION DEL PADRE O TUTOR</li>
+  <li class="list-group-item">ESTAR ASEGURADO EN ALGUNA INSTITUCION PUBLICA (ISSSTE, IMSS, ISSEMIN)</li>
+  <li class="list-group-item">QUE EL ESENARIO ESTE ACORDE AL PERFIL PROFESIONAL (CARRERA)</li>
+</ul>
+                             
        
                              <div class="col-md-4">
                                  <div class="story-image">
@@ -53,7 +60,7 @@
                                        <div class="portfolio-thumb">                                     
                                          <img src="img/pobservacion/1presentacion/presentacionI.jpg">
                                            <div class="overlay-p">
-                                             <a href="img/pejecucion/cartapresentacion.pdf" target="_blank" data-gal="prettyPhoto">
+                                             <a href="img/pobservacion/1presentacion/presentacionP.pdf" target="_blank" data-gal="prettyPhoto">
                                                <i class="fa fa-arrows-alt fa-2x"></i>
                                              </a>                                        
                                            </div>                                    
@@ -85,11 +92,26 @@
                                                  <div class="col-xs-3">
                                                  <input type="text" name="CargoResponsable" value="<?php echo Input::old('CargoResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
                                                  <div class="alert-danger"><?php echo $errors->first('CargoResponsable');?></div>
-                                                 </div>                                                 
-                                                                                                 
+                                                 </div>                                
                                                  
+                                                  <label class="control-label col-xs-3">                 
+                                             Municipio:</label>
+                                                 <div class="col-xs-3">
+                                                 <input type="text" name="municipio" value="<?php echo Input::old('municipio'); ?>" class="form-control" id="inputNombre" placeholder="Donde se realizará la práctica">
+                                                 <div class="alert-danger"><?php echo $errors->first('municipio');?></div>
+                                                 </div>  
+                                                                                                         
+                                                <label class="control-label col-xs-3">
+                                             Fecha:</label>  <div class="col-xs-3">
+                                                 <input type="text" name="fCartaPresentacion" value="<?php echo Input::old('fCartaPresentacion');?>" class="form-control" id="fCartaPresentacion" placeholder="Fecha del documento" readonly/>
+                                                 <div class="alert-danger"><?php echo $errors->first('fCartaPresentacion');?></div>
+                                                 </div>   
+                                                 
+                                                 <label class="control-label col-xs-3">
+                                                 <input type="hidden" value="" name="oculto" />
+                                                 <div class="alert-danger"><?php echo $errors->first('oculto');?></div>
                                                  </div>                                                
-                                 
+                                                
                             <br>
                                       <p align="center"><input name="enviar" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
                         </form>
@@ -106,7 +128,7 @@
                                   <div id="columna1"><h4>Imagen de muestra:</h4>  
                                   <div class="portfolio-item">
                                        <div class="portfolio-thumb">                                     
-                                         <img src="img/pobservacion/cartaaceptacion.jpg">
+                                         <img src="img/pobservacion/2aceptacion/cartaaceptacion.jpg">
                                            <div class="overlay-p">
                                              <a href="img/pejecucion/cartaaceptacion.pdf" target="_blank" data-gal="prettyPhoto">
                                                <i class="fa fa-arrows-alt fa-2x"></i>
@@ -121,65 +143,8 @@
                        <div id="columna2">
                                   
  <!-- inicia formulario    ********************************************-->
-                        <form class="form-horizontal" method="POST" action="cartaPresentacion">
-                            
-                                      
-                                    <div class="form-group">
-                                       <h4>¡Datos personales!</h4> 
-                                       
-                                                 <label class="control-label col-xs-3">
-                                            Inicio:</label>  <div class="col-xs-3">
-                                                 <input type="text" name="Finicio" value="<?php echo Input::old('Finicio');?>" class="form-control" id="from" placeholder="Fecha de inicio" readonly/>
-                                                 <div class="alert-danger"><?php echo $errors->first('Finicio');?></div>
-                                                 </div>
-                                                
-                                                 <label class="control-label col-xs-3">
-                                            Final</label> <div class="col-xs-3">
-                                                 <input type="text"  class="form-control" name="Ffinal" value="<?php echo Input::old('Ffinal'); ?>" id="to" placeholder="Fecha de termino" readonly/>
-                                                 <div class="alert-danger"><?php echo $errors->first('Ffinal');?></div>
-                                                 </div>                                                 
-                                                                                         
-                                                 <label class="control-label col-xs-3">
-                                            Semestre que cursas:</label>
-                                                 <div class="col-xs-3">
-                                                 <select name="semestre" class="form-control" value="<?php echo Input::old('semestre'); ?>"><option value="cuarto">Cuarto</option><option value="quinto">Quinto</option><option value="sexto">Sexto</option></select>
-                                                 
-                                                 <div class="alert-danger"><?php echo $errors->first('semestre');?></div>
-                                                 </div>
-                                                  
-                                                 <br><br>
-                                      <h4>¡Datos de la empresa!</h4>
-                                                
-                                                 <label class="control-label col-xs-3">
-                                             Nombre Completo:</label>
-                                                 <div class="col-xs-3">
-                                                 <input type="text" name="NombreResponsable" value="<?php echo Input::old('NombreResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Responsable directo">
-                                                 <div class="alert-danger"><?php echo $errors->first('NombreResponsable');?></div>                                                
-                                                 </div>
-                                                                                  
-                                                 <label class="control-label col-xs-3">
-                                             Cargo:</label>
-                                                 <div class="col-xs-3">
-                                                 <input type="text" name="CargoResponsable" value="<?php echo Input::old('CargoResponsable'); ?>" class="form-control" id="inputNombre" placeholder="Cargo del responsable">
-                                                 <div class="alert-danger"><?php echo $errors->first('CargoResponsable');?></div>
-                                                 </div>                                                 
-                                                                                                 
-                                                 <label class="control-label col-xs-3">
-                                             Dirección:</label>
-                                                 <div class="col-xs-3">
-                                                 <input type="text" name="DireccionLugar" value="<?php echo Input::old('DireccionLugar'); ?>" class="form-control" id="inputNombre" placeholder="Dirección de la empresa">
-                                                 <div class="alert-danger"><?php echo $errors->first('DireccionLugar');?></div>
-                                                 </div>                                                 
-                                                                                                 
-                                                 <label class="control-label col-xs-3">
-                                             Teléfono:</label>
-                                                 <div class="col-xs-3">
-                                                 <input type="tel" name="TeleLugar" value="<?php echo Input::old('TeleLugar'); ?>" class="form-control" id="inputNombre" placeholder="Teléfono de la empresa">
-                                                 <div class="alert-danger"><?php echo $errors->first('TeleLugar');?></div>
-                                                 </div> 
-                                                 
-                                                 </div>                                                
-                                 
+                        Descarga la plantilla de Ejemplo:<br>
+                        <form class="form-horizontal" method="POST" action="cartaPresentacion"> 
                             <br>
                                       <p align="center"><input name="enviar2" type="submit" value="Descargar" class="btn btn-primary btn-lg"></p>                                                                
                         </form>
@@ -189,9 +154,6 @@
                         </div>
                       </div>
                     </div>
-                           
-                        
-                
                  </div> <!-- /.container-fluid -->
                  @include('includes.datepicker')
  @include('includes.pie_y_escript')

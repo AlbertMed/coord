@@ -103,7 +103,7 @@
 							   <li class="dropdown"><a href="#">proyectos prioritarios <i class="icon-angle-right"></i></a>
 								<ul style="display: none;" class="dropdown-menu sub-menu-level1 bold">
 									<li><a href="#">Titulación</a></li>
-									<li><a href="#">Servicio Social</a></li>
+									<li><a target="_blank" href="http://portal2.edomex.gob.mx/serviciosocial/servicio_social/index.htm" >Servicio Social</a></li>
 									<!-- sub menu -->
 									<li class="dropdown"><a href="#">practicas  <i class="icon-angle-right"></i></a>
 								<ul style="display: none;" class="dropdown-menu sub-menu-level2 bold">

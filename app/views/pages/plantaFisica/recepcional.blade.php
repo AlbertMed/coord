@@ -36,7 +36,7 @@
 
         <!-- Jssor Slider Begin -->
         <!-- You can move inline styles to css file or css block. -->
-        <div id="slider1_container" style="position: center; width: 600px; height: 300px; overflow: hidden; ">
+        <div id="slider1_container" style="position: center; width: 600px; height: 400px; overflow: hidden; ">
 
             <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -49,7 +49,7 @@
             </div>
 
             <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 290px; top:350px; width: 800px; height: 400px;
+            <div u="slides" style="cursor: move; position: absolute; left: 200px; top:350px; width: 999px; height: 500px;
             overflow: hidden;">
                
                 <div>
@@ -103,14 +103,6 @@
                  <div>
                     <a u=image href="#">
                         <img src="img/PLANTA_FISICA/imagenes/TITULACIONES/IMG_0082.jpg"/>
-                    </a>
-                    <div u=caption t="*" class="captionOrange" style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">gran espacio educativo
-                    </div>
-                </div>
-                
-                 <div>
-                    <a u=image href="#">
-                        <img src="img/PLANTA_FISICA/imagenes/SALA_RECEPCIONAL/SALA RECEPCIONAL 10.jpg"/>
                     </a>
                     <div u=caption t="*" class="captionOrange" style="position:absolute; left:20px; top: 30px; width:300px; height:30px;">gran espacio educativo
                     </div>
@@ -266,10 +258,10 @@
                 }
             </style>
             <!-- Arrow Left -->
-             <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 550px; left: 300px;">
+             <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 580px; left: 220px;">
         </span>
             <!-- Arrow Right -->
-             <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 550px; left:1035px">
+             <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 580px; left:1135px">
         </span>
             <!-- Arrow Navigator Skin End -->
              <a style="display: none" href="http://www.jssor.com">javascript</a>

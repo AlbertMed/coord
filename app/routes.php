@@ -45,22 +45,40 @@ Route::post('loginn','Cambios@verifica');
 
 Route::get('/insert', function()  //falta cambiar valores ... primero hacer registro
 {
-	$alumno = new Alumno;
-        
-        $alumno->matricula = 12345;
-        $alumno->nombre = 'Julio Cesar';
-        $alumno->apaterno = 'Robles';
-        $alumno->amaterno = 'Cazares';
-        $alumno->curp = 'JIML910105HDFtr6';
-        $alumno->carrera='Técnico en Informática';
-        $alumno->password = Hash::make('hola');
-        $alumno->sexo = 'M';
-        $alumno->fechanac = '1992-10-30';
-        $alumno->email = 'icsyulio@gmail.com';
-        $alumno->situacion = 'servicio';
-        $alumno->tipo=0;
+    
+    
+        $fp = fopen("prueba.txt", "r");
+        while (!feof($fp)) {
+            $linea = fgets($fp);
+            $porciones = explode(",", $linea);
+           // echo $linea . "<br />";
+            $resultado = count($porciones);
+            for($i = 0; $i<$resultado; $i++){
+                echo $porciones[$i]."<br />";
+            }
+            $alumno = new Alumno; 
+            $alumno->matricula =  $porciones[0];
+            $alumno->nombre =$porciones[1];
+            $alumno->apaterno = $porciones[2];
+            $alumno->amaterno = $porciones[3];
+            $alumno->curp =$porciones[4];
+            $alumno->carrera=$porciones[5];
+            $alumno->password = Hash::make($porciones[6]);
+            $alumno->sexo = $porciones[7];
+            $alumno->fechanac = $porciones[8];
+            $alumno->email = $porciones[9];
+            $alumno->situacion = $porciones[10];
+            $alumno->tipo=$porciones[11];
+            $alumno->Ndescargas=$porciones[12];
+            $alumno->save();
+        }
 
-        $alumno->save();
+
+        fclose($fp);
+	   
+        
+       // DB::insert('insert into contador (numero,id) values(0,1)');
+        //DB::disconnect('mysql');
 
 });
 

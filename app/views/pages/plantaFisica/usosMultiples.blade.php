@@ -35,7 +35,7 @@
 
         <!-- Jssor Slider Begin -->
         <!-- You can move inline styles to css file or css block. -->
-        <div id="slider1_container" style="position: center; width: 600px; height: 300px; overflow: hidden; ">
+        <div id="slider1_container" style="position: center; width: 600px; height: 400px; overflow: hidden; ">
 
             <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Slides Container -->
-            <div u="slides" style="cursor: move; position: absolute; left: 130px; top:350px; width: 1100px; height: 400px;
+            <div u="slides" style="cursor: move; position: absolute; left: 200px; top:350px; width: 999px; height: 500px;
             overflow: hidden;">
                 <div>
                     <a u=image href="#">
@@ -119,7 +119,7 @@
                 }
             </style>
             <!-- bullet navigator container -->
-            <div u="navigator" class="jssorb01" style="position: absolute; bottom: -430px; left: 630px;">
+            <div u="navigator" class="jssorb01" style="position: absolute; bottom: -430px; left: 640px;">
                 <!-- bullet navigator item prototype -->
                 <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
             </div>
@@ -163,7 +163,7 @@
                 }
             </style>
             <!-- Arrow Left -->
-             <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 550px; left: 180px;">
+             <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 580px; left: 220px;">
         </span>
             <!-- Arrow Right -->
              <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 580px; left:1135px">
